@@ -1,0 +1,228 @@
+ [
+    {
+  "ingredientPattern": "DBD,FEF,_GI",
+  "recipeGroup": 1,
+  "ingredients": {
+    "B": {
+      "type": "item",
+      "code": "fa-varangian-schematic",
+      "returnedStack": { "type": "item", "code": "fa-varangian-schematic" }
+    },
+    "D": {
+      "type": "item",
+      "code": "game:metalplate-*",
+      "name": "metal",
+      "allowedVariants": ["steel", "iron", "meteoriciron"]
+    },
+    "E": {
+      "type": "item",
+      "code": "game:armor-head-plate-*",
+      "name": "metal",
+      "allowedVariants": ["steel", "iron", "meteoriciron"]
+    },
+    "F": {
+      "type": "item",
+      "code": "game:metalnailsandstrips-*",
+      "name": "metal",
+      "allowedVariants": ["steel", "iron", "meteoriciron"],
+      "quantity": 2
+    },
+    "G": {
+      "type": "item",
+      "code": "game:hammer-*",
+      "isTool": true,
+      "toolDurabilityCost": 100
+    },
+    "I": {
+      "type": "item",
+      "code": "game:leather-sturdy-plain",
+      "quantity": 2
+    }
+  },
+  "width": 3,
+  "height": 3,
+  "name": "varangian heavy {metal} plate head",
+  "output": {
+    "type": "item",
+    "code": "fa-varangian-head-heavy-wingedhead-{metal}-none"
+  }
+},
+
+  {
+    "ingredientPattern": "_D_,IB_,FGF",
+    "recipeGroup": 1,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "fa-varangian-head-heavy-wingedhead-*-none",
+        "name": "metal",
+        "allowedVariants": ["steel", "meteoriciron", "iron"],
+        "quantity": 1
+      },
+      "D": {
+        "type": "item",
+        "code": "game:cloth-*",
+        "name": "color",
+        "allowedVariants": [
+          "plain",
+          "blue",
+          "red",
+          "yellow",
+          "green",
+          "purple",
+          "pink",
+          "orange",
+          "brown",
+          "gray",
+          "black",
+          "white"
+        ],
+        "quantity": 4
+      },
+      "F": {
+        "type": "item",
+        "code": "game:metalnailsandstrips-*",
+        "name": "metal",
+        "allowedVariants": ["steel", "meteoriciron", "iron"]
+      },
+      "G": {
+        "type": "item",
+        "code": "game:hammer-*",
+        "isTool": true,
+        "toolDurabilityCost": 100
+      },
+      "I": {
+        "type": "item",
+        "code": "game:shears-*",
+        "isTool": true,
+        "toolDurabilityCost": 100
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "name": "varangian {metal} crista plate head",
+    "output": {
+      "type": "item",
+      "code": "fa-varangian-head-heavy-cristahead-{metal}-{color}"
+    }
+  },
+
+  {
+    "ingredientPattern": "_D_,IB_,FGF",
+    "recipeGroup": 1,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "fa-varangian-head-heavy-wingedhead-*-none",
+        "name": "metal",
+        "allowedVariants": ["steel", "meteoriciron", "iron"],
+        "quantity": 1
+      },
+      "D": {
+        "type": "item",
+        "code": "game:cloth-*",
+        "name": "color",
+        "allowedVariants": [
+          "plain",
+          "blue",
+          "red",
+          "yellow",
+          "green",
+          "purple",
+          "pink",
+          "orange",
+          "brown",
+          "gray",
+          "black",
+          "white"
+        ],
+        "quantity": 6
+      },
+      "F": {
+        "type": "item",
+        "code": "game:metalnailsandstrips-*",
+        "name": "metal",
+        "allowedVariants": ["steel", "meteoriciron", "iron"]
+      },
+      "G": {
+        "type": "item",
+        "code": "game:hammer-*",
+        "isTool": true,
+        "toolDurabilityCost": 100
+      },
+      "I": {
+        "type": "item",
+        "code": "game:shears-*",
+        "isTool": true,
+        "toolDurabilityCost": 100
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "name": "varangian {metal} winged plate head",
+    "output": {
+      "type": "item",
+      "code": "fa-varangian-head-heavy-wingedhead-{metal}-{color}"
+    }
+  },
+
+   {
+    "ingredientPattern": "DDD,IB_,FGF",
+    "recipeGroup": 1,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "fa-varangian-head-heavy-wingedhead-*-none",
+        "name": "metal",
+        "allowedVariants": ["steel", "meteoriciron", "iron"],
+        "quantity": 1
+      },
+      "D": {
+        "type": "item",
+        "code": "game:cloth-*",
+        "name": "color",
+        "allowedVariants": [
+          "plain",
+          "blue",
+          "red",
+          "yellow",
+          "green",
+          "purple",
+          "pink",
+          "orange",
+          "brown",
+          "gray",
+          "black",
+          "white"
+        ],
+        "quantity": 3
+      },
+      "F": {
+        "type": "item",
+        "code": "game:metalnailsandstrips-*",
+        "name": "metal",
+        "allowedVariants": ["steel", "meteoriciron", "iron"]
+      },
+      "G": {
+        "type": "item",
+        "code": "game:hammer-*",
+        "isTool": true,
+        "toolDurabilityCost": 100
+      },
+      "I": {
+        "type": "item",
+        "code": "game:shears-*",
+        "isTool": true,
+        "toolDurabilityCost": 100
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "name": "varangian {metal} sidecrista plate head",
+    "output": {
+      "type": "item",
+      "code": "fa-varangian-head-heavy-cristasidehead-{metal}-{color}"
+    }
+  }
+
+ ]

@@ -1,0 +1,51 @@
+[
+  {
+    "ingredientPattern": "DBD,FEF,IGI",
+    "recipeGroup": 1,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "fa-varangian-schematic",
+        "returnedStack": { "type": "item", "code": "fa-varangian-schematic" }
+      },
+      "D": {
+        "type": "item",
+        "code": "game:metalplate-*",
+        "name": "metal",
+        "allowedVariants": ["steel", "iron", "meteoriciron"],
+        "quantity": 1
+      },
+      "E": {
+        "type": "item",
+        "code": "game:armor-legs-plate-*",
+        "name": "metal",
+        "allowedVariants": ["steel", "iron", "meteoriciron"]
+      },
+      "F": {
+        "type": "item",
+        "code": "game:metalnailsandstrips-*",
+        "name": "metal",
+        "allowedVariants": ["steel", "iron", "meteoriciron"],
+        "quantity": 4
+      },
+      "G": {
+        "type": "item",
+        "code": "game:hammer-*",
+        "isTool": true,
+        "toolDurabilityCost": 100
+      },
+      "I": {
+        "type": "item",
+        "code": "game:leather-sturdy-plain",
+        "quantity": 4
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "name": "varangian {metal} plate legs",
+    "output": {
+      "type": "item",
+      "code": "fa-varangian-legs-heavy-{metal}-none"
+    }
+  }
+]

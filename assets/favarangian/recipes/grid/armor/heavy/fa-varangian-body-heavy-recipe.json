@@ -1,0 +1,328 @@
+[
+  {
+    "ingredientPattern": "DBD,FEF,IGI",
+    "recipeGroup": 1,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "fa-varangian-schematic",
+        "returnedStack": { "type": "item", "code": "fa-varangian-schematic" }
+      },
+      "D": {
+        "type": "item",
+        "code": "game:metalplate-*",
+        "name": "metal",
+        "allowedVariants": ["steel", "iron", "meteoriciron"],
+        "quantity": 2
+      },
+      "E": {
+        "type": "item",
+        "code": "game:armor-body-plate-*",
+        "name": "metal",
+        "allowedVariants": ["steel", "iron", "meteoriciron"]
+      },
+      "F": {
+        "type": "item",
+        "code": "game:metalnailsandstrips-*",
+        "name": "metal",
+        "allowedVariants": ["steel", "iron", "meteoriciron"],
+        "quantity": 6
+      },
+      "G": {
+        "type": "item",
+        "code": "game:hammer-*",
+        "isTool": true,
+        "toolDurabilityCost": 100
+      },
+      "I": {
+        "type": "item",
+        "code": "game:leather-sturdy-plain",
+        "quantity": 6
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "name": "varangian {metal} plate body I",
+    "output": {
+      "type": "item",
+      "code": "fa-varangian-body-heavy-body1-{metal}-none"
+    }
+  },
+
+  {
+    "ingredientPattern": "_I_,DBD,FGF",
+    "recipeGroup": 1,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "fa-varangian-body-heavy-body1-*-none",
+        "name": "metal",
+        "allowedVariants": ["steel", "meteoriciron", "iron"],
+        "quantity": 1
+      },
+      "D": {
+        "type": "item",
+        "code": "game:cloth-*",
+        "name": "color",
+        "allowedVariants": [
+          "plain",
+          "blue",
+          "red",
+          "yellow",
+          "green",
+          "purple",
+          "pink",
+          "orange",
+          "brown",
+          "gray",
+          "black",
+          "white"
+        ],
+        "quantity": 8
+      },
+      "F": {
+        "type": "item",
+        "code": "game:metalnailsandstrips-*",
+        "name": "metal",
+        "allowedVariants": ["steel", "meteoriciron", "iron"]
+      },
+      "G": {
+        "type": "item",
+        "code": "game:hammer-*",
+        "isTool": true,
+        "toolDurabilityCost": 100
+      },
+      "I": {
+        "type": "item",
+        "code": "game:shears-*",
+        "isTool": true,
+        "toolDurabilityCost": 100
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "name": " ",
+    "output": {
+      "type": "item",
+      "code": "fa-varangian-body-heavy-body1-{metal}-{color}"
+    }
+  },
+
+  {
+    "ingredientPattern": "DBD,FEF,IGI",
+    "recipeGroup": 1,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "fa-varangian-schematic",
+        "returnedStack": { "type": "item", "code": "fa-varangian-schematic" }
+      },
+      "D": {
+        "type": "item",
+        "code": "game:metalplate-*",
+        "name": "metal",
+        "allowedVariants": ["steel", "iron", "meteoriciron"],
+        "quantity": 4
+      },
+      "E": {
+        "type": "item",
+        "code": "game:armor-body-plate-*",
+        "name": "metal",
+        "allowedVariants": ["steel", "iron", "meteoriciron"]
+      },
+      "F": {
+        "type": "item",
+        "code": "game:metalnailsandstrips-*",
+        "name": "metal",
+        "allowedVariants": ["steel", "iron", "meteoriciron"],
+        "quantity": 8
+      },
+      "G": {
+        "type": "item",
+        "code": "game:hammer-*",
+        "isTool": true,
+        "toolDurabilityCost": 100
+      },
+      "I": {
+        "type": "item",
+        "code": "game:leather-sturdy-plain",
+        "quantity": 6
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "name": "varangian {metal} plate body I",
+    "output": {
+      "type": "item",
+      "code": "fa-varangian-body-heavy-body2-{metal}-none"
+    }
+  },
+
+  {
+    "ingredientPattern": "_I_,DBD,FGF",
+    "recipeGroup": 1,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "fa-varangian-body-heavy-body2-*-none",
+        "name": "metal",
+        "allowedVariants": ["steel", "meteoriciron", "iron"],
+        "quantity": 1
+      },
+      "D": {
+        "type": "item",
+        "code": "game:cloth-*",
+        "name": "color",
+        "allowedVariants": [
+          "plain",
+          "blue",
+          "red",
+          "yellow",
+          "green",
+          "purple",
+          "pink",
+          "orange",
+          "brown",
+          "gray",
+          "black",
+          "white"
+        ],
+        "quantity": 8
+      },
+      "F": {
+        "type": "item",
+        "code": "game:metalnailsandstrips-*",
+        "name": "metal",
+        "allowedVariants": ["steel", "meteoriciron", "iron"]
+      },
+      "G": {
+        "type": "item",
+        "code": "game:hammer-*",
+        "isTool": true,
+        "toolDurabilityCost": 100
+      },
+      "I": {
+        "type": "item",
+        "code": "game:shears-*",
+        "isTool": true,
+        "toolDurabilityCost": 100
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "name": " ",
+    "output": {
+      "type": "item",
+      "code": "fa-varangian-body-heavy-body2-{metal}-{color}"
+    }
+  },
+
+  {
+    "ingredientPattern": "_BD,FEF,IGI",
+    "recipeGroup": 1,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "fa-varangian-schematic",
+        "returnedStack": { "type": "item", "code": "fa-varangian-schematic" }
+      },
+      "D": {
+        "type": "item",
+        "code": "game:metalplate-*",
+        "name": "metal",
+        "allowedVariants": ["steel", "iron", "meteoriciron"],
+        "quantity": 4
+      },
+      "E": {
+        "type": "item",
+        "code": "game:armor-body-plate-*",
+        "name": "metal",
+        "allowedVariants": ["steel", "iron", "meteoriciron"]
+      },
+      "F": {
+        "type": "item",
+        "code": "game:metalnailsandstrips-*",
+        "name": "metal",
+        "allowedVariants": ["steel", "iron", "meteoriciron"],
+        "quantity": 4
+      },
+      "G": {
+        "type": "item",
+        "code": "game:hammer-*",
+        "isTool": true,
+        "toolDurabilityCost": 100
+      },
+      "I": {
+        "type": "item",
+        "code": "game:leather-sturdy-plain",
+        "quantity": 6
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "name": "varangian {metal} plate body I",
+    "output": {
+      "type": "item",
+      "code": "fa-varangian-body-heavy-body3-{metal}-none"
+    }
+  },
+
+  {
+    "ingredientPattern": "_I_,DBD,FGF",
+    "recipeGroup": 1,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "fa-varangian-body-heavy-body3-*-none",
+        "name": "metal",
+        "allowedVariants": ["steel", "meteoriciron", "iron"],
+        "quantity": 1
+      },
+      "D": {
+        "type": "item",
+        "code": "game:cloth-*",
+        "name": "color",
+        "allowedVariants": [
+          "plain",
+          "blue",
+          "red",
+          "yellow",
+          "green",
+          "purple",
+          "pink",
+          "orange",
+          "brown",
+          "gray",
+          "black",
+          "white"
+        ],
+        "quantity": 8
+      },
+      "F": {
+        "type": "item",
+        "code": "game:metalnailsandstrips-*",
+        "name": "metal",
+        "allowedVariants": ["steel", "meteoriciron", "iron"]
+      },
+      "G": {
+        "type": "item",
+        "code": "game:hammer-*",
+        "isTool": true,
+        "toolDurabilityCost": 100
+      },
+      "I": {
+        "type": "item",
+        "code": "game:shears-*",
+        "isTool": true,
+        "toolDurabilityCost": 100
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "name": " ",
+    "output": {
+      "type": "item",
+      "code": "fa-varangian-body-heavy-body3-{metal}-{color}"
+    }
+  }
+]

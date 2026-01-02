@@ -1,0 +1,347 @@
+[
+	  {
+    "ingredientPattern": "BL,P_",
+    "recipeGroup": 2,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "fa-varangian-body-light-body1-steel-*",
+        "name": "color",
+        "allowedVariants": [
+          "plain",
+          "blue",
+          "red",
+          "yellow",
+          "green",
+          "purple",
+          "pink",
+          "orange",
+          "brown",
+          "gray",
+          "black",
+          "white",
+          "none"
+        ]
+      },
+      "P": { "type": "item", "code": "game:metalplate-steel" },
+      "L": { "type": "item", "code": "game:leather-normal-plain" }
+    },
+    "width": 2,
+    "height": 2,
+    "shapeless": true,
+    "copyAttributesFrom": "B",
+    "averageDurability": false,
+    "name": "Varangian Light body repair",
+    "output": {
+      "type": "item",
+      "code": "fa-varangian-body-light-body1-steel-{color}"
+    }
+  },
+  	  {
+    "ingredientPattern": "BL,P_",
+    "recipeGroup": 2,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "fa-varangian-body-light-body1-meteoriciron-*",
+        "name": "color",
+        "allowedVariants": [
+          "plain",
+          "blue",
+          "red",
+          "yellow",
+          "green",
+          "purple",
+          "pink",
+          "orange",
+          "brown",
+          "gray",
+          "black",
+          "white",
+          "none"
+        ]
+      },
+      "P": { "type": "item", "code": "game:metalplate-meteoriciron" },
+      "L": { "type": "item", "code": "game:leather-normal-plain" }
+    },
+    "width": 2,
+    "height": 2,
+    "shapeless": true,
+    "copyAttributesFrom": "B",
+    "averageDurability": false,
+    "name": "Varangian Light body repair",
+    "output": {
+      "type": "item",
+      "code": "fa-varangian-body-light-body1-meteoriciron-{color}"
+    }
+  },
+  	  {
+    "ingredientPattern": "BL,P_",
+    "recipeGroup": 2,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "fa-varangian-body-light-body1-iron-*",
+        "name": "color",
+        "allowedVariants": [
+          "plain",
+          "blue",
+          "red",
+          "yellow",
+          "green",
+          "purple",
+          "pink",
+          "orange",
+          "brown",
+          "gray",
+          "black",
+          "white",
+          "none"
+        ]
+      },
+      "P": { "type": "item", "code": "game:metalplate-iron" },
+      "L": { "type": "item", "code": "game:leather-normal-plain" }
+    },
+    "width": 2,
+    "height": 2,
+    "shapeless": true,
+    "copyAttributesFrom": "B",
+    "averageDurability": false,
+    "name": "Varangian Light body repair",
+    "output": {
+      "type": "item",
+      "code": "fa-varangian-body-light-body1-iron-{color}"
+    }
+  },
+
+  	  {
+    "ingredientPattern": "BL,P_",
+    "recipeGroup": 2,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "fa-varangian-legs-light-steel-*",
+        "name": "color",
+        "allowedVariants": [
+          "plain",
+          "blue",
+          "red",
+          "yellow",
+          "green",
+          "purple",
+          "pink",
+          "orange",
+          "brown",
+          "gray",
+          "black",
+          "white",
+          "none"
+        ]
+      },
+      "P": { "type": "item", "code": "game:metalplate-steel" },
+      "L": { "type": "item", "code": "game:leather-normal-plain" }
+    },
+    "width": 2,
+    "height": 2,
+    "shapeless": true,
+    "copyAttributesFrom": "B",
+    "averageDurability": false,
+    "name": "Varangian Light legs repair",
+    "output": {
+      "type": "item",
+      "code": "fa-varangian-legs-light-steel-{color}"
+    }
+  },
+  	  {
+    "ingredientPattern": "BL,P_",
+    "recipeGroup": 2,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "fa-varangian-legs-light-meteoriciron-*",
+        "name": "color",
+        "allowedVariants": [
+          "plain",
+          "blue",
+          "red",
+          "yellow",
+          "green",
+          "purple",
+          "pink",
+          "orange",
+          "brown",
+          "gray",
+          "black",
+          "white",
+          "none"
+        ]
+      },
+      "P": { "type": "item", "code": "game:metalplate-meteoriciron" },
+      "L": { "type": "item", "code": "game:leather-normal-plain" }
+    },
+    "width": 2,
+    "height": 2,
+    "shapeless": true,
+    "copyAttributesFrom": "B",
+    "averageDurability": false,
+    "name": "Varangian Light legs repair",
+    "output": {
+      "type": "item",
+      "code": "fa-varangian-legs-light-meteoriciron-{color}"
+    }
+  },
+  	  {
+    "ingredientPattern": "BL,P_",
+    "recipeGroup": 2,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "fa-varangian-legs-light-iron-*",
+        "name": "color",
+        "allowedVariants": [
+          "plain",
+          "blue",
+          "red",
+          "yellow",
+          "green",
+          "purple",
+          "pink",
+          "orange",
+          "brown",
+          "gray",
+          "black",
+          "white",
+          "none"
+        ]
+      },
+      "P": { "type": "item", "code": "game:metalplate-iron" },
+      "L": { "type": "item", "code": "game:leather-normal-plain" }
+    },
+    "width": 2,
+    "height": 2,
+    "shapeless": true,
+    "copyAttributesFrom": "B",
+    "averageDurability": false,
+    "name": "Varangian Light legs repair",
+    "output": {
+      "type": "item",
+      "code": "fa-varangian-legs-light-iron-{color}"
+    }
+  },
+
+ 	  {
+    "ingredientPattern": "BL,P_",
+    "recipeGroup": 2,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "fa-varangian-head-light-wingedhead-iron-*",
+        "name": "color",
+        "allowedVariants": [
+          "plain",
+          "blue",
+          "red",
+          "yellow",
+          "green",
+          "purple",
+          "pink",
+          "orange",
+          "brown",
+          "gray",
+          "black",
+          "white",
+          "none"
+        ]
+      },
+      "P": { "type": "item", "code": "game:metalplate-iron" },
+      "L": { "type": "item", "code": "game:leather-normal-plain" }
+    },
+    "width": 2,
+    "height": 2,
+    "shapeless": true,
+    "copyAttributesFrom": "B",
+    "averageDurability": false,
+    "name": "Varangian Light Helmet repair",
+    "output": {
+      "type": "item",
+      "code": "fa-varangian-head-light-wingedhead-iron-{color}"
+    }
+  },
+   	  {
+    "ingredientPattern": "BL,P_",
+    "recipeGroup": 2,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "fa-varangian-head-light-wingedhead-meteoriciron-*",
+        "name": "color",
+        "allowedVariants": [
+          "plain",
+          "blue",
+          "red",
+          "yellow",
+          "green",
+          "purple",
+          "pink",
+          "orange",
+          "brown",
+          "gray",
+          "black",
+          "white",
+          "none"
+        ]
+      },
+      "P": { "type": "item", "code": "game:metalplate-meteoriciron" },
+      "L": { "type": "item", "code": "game:leather-normal-plain" }
+    },
+    "width": 2,
+    "height": 2,
+    "shapeless": true,
+    "copyAttributesFrom": "B",
+    "averageDurability": false,
+    "name": "Varangian Light Helmet repair",
+    "output": {
+      "type": "item",
+      "code": "fa-varangian-head-light-wingedhead-meteoriciron-{color}"
+    }
+  },
+
+ 	  {
+    "ingredientPattern": "BL,P_",
+    "recipeGroup": 2,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "fa-varangian-head-light-wingedhead-steel-*",
+        "name": "color",
+        "allowedVariants": [
+          "plain",
+          "blue",
+          "red",
+          "yellow",
+          "green",
+          "purple",
+          "pink",
+          "orange",
+          "brown",
+          "gray",
+          "black",
+          "white",
+          "none"
+        ]
+      },
+      "P": { "type": "item", "code": "game:metalplate-steel" },
+      "L": { "type": "item", "code": "game:leather-normal-plain" }
+    },
+    "width": 2,
+    "height": 2,
+    "shapeless": true,
+    "copyAttributesFrom": "B",
+    "averageDurability": false,
+    "name": "Varangian Light Helmet repair",
+    "output": {
+      "type": "item",
+      "code": "fa-varangian-head-light-wingedhead-steel-{color}"
+    }
+  }
+]

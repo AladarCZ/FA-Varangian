@@ -1,0 +1,146 @@
+{
+	"code": "fa-varangian-legs",
+	"class": "ItemWearable",
+	"heldTpIdleAnimation": "holdunderarm",
+	"variantgroups": [
+		{ "code": "version",  "states": ["heavy", "light"]},
+		{ "code": "metallegs",  "states": ["iron", "meteoriciron", "steel"]},
+		{ "code": "line",  "states": ["black","blue","brown","gray","green","none","orange","pink","plain","purple","red","white","yellow"]}
+	],
+	"allowedVariants": [ 
+		"fa-varangian-legs-heavy-*none",
+		"fa-varangian-legs-light-*"
+
+	],
+	"shapeByType": 
+	{
+		"*heavy*": { "base": "entity/armor/varangian/heavy/varangian_heavy_legs" },
+		"*light*": { "base": "entity/armor/varangian/light/varangian_light_legs" }
+	},
+	"texturesByType": {
+		"*heavy*": 
+		{
+  			"seraph": { "base": "game:block/transparent" },
+ 			"varangianlegs": { "base": "armor/entity/heavy/varangian_heavy_{metallegs}" },
+  			"line": { "base": "block/lines/line{line}" }
+		},
+		"*light*": 
+		{
+ 			"seraph": { "base": "game:block/transparent" },
+			"varangianlegs": { "base": "armor/entity/light/varangian_light_{metallegs}" },
+			"line": { "base": "block/lines/line{line}" }
+		}
+	},
+	"storageFlags": 128,
+	"maxstacksize": 4,
+	"attributes": {
+		"handbook": { 
+			"groupBy":["fa-varangian-legs-{metallegs}-{version}-*"]
+		},
+		"visibleDamageEffect": true,
+		"wearableAttachment": true,
+		"clothescategoryByType": {
+			"*": "armorlegs"
+		},
+		"defaultProtLoss": {
+			perTierRelativeProtectionLoss: [0.03, 0.15],
+			perTierFlatDamageReductionLoss: [0.1, 0.2]
+		},
+		"protectionModifiersByType": {
+			"*heavy-steel*": {
+				relativeProtection: 0.98,
+				flatDamageReduction: 3.5,
+				highDamageTierResistant: true,
+				protectionTier: 4
+			},
+			"*heavy-meteoriciron*": {
+				relativeProtection: 0.975,
+				flatDamageReduction: 3.2,
+				highDamageTierResistant: true,
+				protectionTier: 3
+			},
+			"*heavy-iron*": {
+				relativeProtection: 0.97,
+				flatDamageReduction: 3,
+				highDamageTierResistant: true,
+				protectionTier: 3
+			},
+			"*light-steel*": {
+				relativeProtection: 0.92,
+				flatDamageReduction: 2.6,
+				highDamageTierResistant: true,
+				protectionTier: 4
+			},
+			"*light-meteoriciron*": {
+				relativeProtection: 0.91,
+				flatDamageReduction: 2.55,
+				highDamageTierResistant: true,
+				protectionTier: 3
+			},
+			"*light-iron*": {
+				relativeProtection: 0.91,
+				flatDamageReduction: 2.5,
+				highDamageTierResistant: true,
+				protectionTier: 3
+			}
+		},
+		"statModifiersByType": {
+			"*heavy*": {
+				rangedWeaponsAcc: -0.10,
+				rangedWeaponsSpeed: -0.20,
+				walkSpeed: -0.07,
+				healingeffectivness: -0.26,
+				hungerrate: 0.15
+			},			
+			"*light*": {
+				rangedWeaponsAcc: -0.08,
+				rangedWeaponsSpeed: -0.08,
+				walkSpeed: -0.03,
+				healingeffectivness: -0.12,
+				hungerrate: 0.10
+			}
+		}
+	},
+	"creativeinventory": { "general": ["*"], "items": ["*"], "forgottenarmoryvarangian": ["*"] },
+	"renderAlphaTest": 0.25,
+	"durabilityByType": {
+		"*iron*heavy*": 1900,
+		"*meteoric*heavy*": 2500,
+		"*steel*heavy*": 5200,
+		"*iron*light*": 2500,
+		"*meteoric*light*": 3200,
+		"*steel*light*": 4500
+	},
+	"fpHandTransformByType": {
+		"*": {
+			translation: { x: 0.4, y: -1.2, z: -0.5 },
+			rotation: { x: 163, y: -111, z: -180 },
+			origin: { x: 0.5, y: 1.6, z: 0.5 },
+			scale: 2.15
+		},
+	},
+	"tpHandTransformByType": {
+		"*": {
+			translation: { x: -0.7, y: -0.6, z: -0.4 },
+			rotation: { x: 95, y: -20, z: -91 },
+			origin: { x: 0.5, y: 0.7, z: 0.5 },
+			scale: 0.74
+		}
+	},
+	"guiTransformByType": {
+		"*": {
+			translation: { x: 1, y: 0, z: 0 },
+			rotation: { x: -26, y: -46, z: -180 },
+			origin: { x: 0.5, y: 0.6, z: 0.5 },
+			scale: 1.25
+		},
+	},
+	"groundTransformByType": {
+		"*": {
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: 0, y: 0, z: 90 },
+			origin: { x: 0.34, y: 1.12, z: 0.5 },
+			scale: 3.1
+		},
+	},
+}
