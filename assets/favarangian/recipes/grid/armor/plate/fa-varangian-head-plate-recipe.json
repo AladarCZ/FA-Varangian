@@ -1,0 +1,186 @@
+[
+  {
+  "ingredientPattern": "DBD,FEF,_GI",
+  "recipeGroup": 1,
+  "ingredients": {
+    "B": {
+      "type": "item",
+      "code": "favarangian:fa-varangian-schematic",
+      "returnedStack": { "type": "item", "code": "favarangian:fa-varangian-schematic" }
+    },
+    "D": {
+      "type": "item",
+      "code": "game:metalplate-*",
+      "name": "metal",
+      "allowedVariants": ["iron", "meteoriciron"]
+    },
+    "E": {
+      "type": "item",
+      "code": "game:armor-head-plate-*",
+      "name": "metal",
+      "allowedVariants": ["iron", "meteoriciron"]
+    },
+    "F": {
+      "type": "item",
+      "code": "game:metalnailsandstrips-*",
+      "name": "metal",
+      "allowedVariants": ["iron", "meteoriciron"],
+      "quantity": 2
+    },
+    "G": {
+      "type": "item",
+      "code": "game:hammer-*",
+      "isTool": true,
+      "toolDurabilityCost": 100
+    },
+    "I": {
+      "type": "item",
+      "code": "game:leather-normal-plain",
+      "quantity": 2
+    }
+  },
+  "width": 3,
+  "height": 3,
+  "name": "Varangian platehead captain {metal}",
+  "output": {
+    "type": "item",
+    "code": "favarangian:platehead-captain-{metal}",
+    "attributes": { "types": { "coverhead": "none", "striphead": "none", "decorationhead": "none", "colorhead": "none" } }
+  }
+},
+  {
+  "ingredientPattern": "DBD,FEF,_GI",
+  "recipeGroup": 1,
+  "ingredients": {
+    "B": {
+      "type": "item",
+      "code": "favarangian:fa-varangian-schematic",
+      "returnedStack": { "type": "item", "code": "favarangian:fa-varangian-schematic" }
+    },
+    "D": {
+      "type": "item",
+      "code": "game:metalplate-steel"
+    },
+    "E": {
+      "type": "item",
+      "code": "game:armor-head-plate-steel"
+    },
+    "F": {
+      "type": "item",
+      "code": "game:metalnailsandstrips-steel",
+      "quantity": 2
+    },
+    "G": {
+      "type": "item",
+      "code": "game:hammer-*",
+      "isTool": true,
+      "toolDurabilityCost": 100
+    },
+    "I": {
+      "type": "item",
+      "code": "game:leather-sturdy-plain",
+      "quantity": 2
+    }
+  },
+  "width": 3,
+  "height": 3,
+  "name": "Varangian platehead captain steel",
+  "output": {
+    "type": "item",
+    "code": "favarangian:platehead-captain-steel",
+    "attributes": { "types": { "coverhead": "none", "striphead": "none", "decorationhead": "none", "colorhead": "none" } }
+  }
+},
+  {
+  "ingredientPattern": "DBD,FEF,DGI",
+  "recipeGroup": 1,
+  "ingredients": {
+    "B": {
+      "type": "item",
+      "code": "favarangian:fa-varangian-schematic",
+      "returnedStack": { "type": "item", "code": "favarangian:fa-varangian-schematic" }
+    },
+    "D": {
+      "type": "item",
+      "code": "game:metalplate-*",
+      "name": "metal",
+      "allowedVariants": ["iron", "meteoriciron"]
+    },
+    "E": {
+      "type": "item",
+      "code": "game:armor-head-plate-*",
+      "name": "metal",
+      "allowedVariants": ["iron", "meteoriciron"]
+    },
+    "F": {
+      "type": "item",
+      "code": "game:metalnailsandstrips-*",
+      "name": "metal",
+      "allowedVariants": ["iron", "meteoriciron"],
+      "quantity": 2
+    },
+    "G": {
+      "type": "item",
+      "code": "game:hammer-*",
+      "isTool": true,
+      "toolDurabilityCost": 100
+    },
+    "I": {
+      "type": "item",
+      "code": "game:leather-normal-plain",
+      "quantity": 2
+    }
+  },
+  "width": 3,
+  "height": 3,
+  "name": "Varangian platehead captainmasked {metal}",
+  "output": {
+    "type": "item",
+    "code": "favarangian:platehead-captainmasked-{metal}",
+    "attributes": { "types": { "coverhead": "none", "striphead": "none", "decorationhead": "none", "colorhead": "none" } }
+  }
+},
+  {
+  "ingredientPattern": "DBD,FEF,DGI",
+  "recipeGroup": 1,
+  "ingredients": {
+    "B": {
+      "type": "item",
+      "code": "favarangian:fa-varangian-schematic",
+      "returnedStack": { "type": "item", "code": "favarangian:fa-varangian-schematic" }
+    },
+    "D": {
+      "type": "item",
+      "code": "game:metalplate-steel"
+    },
+    "E": {
+      "type": "item",
+      "code": "game:armor-head-plate-steel"
+    },
+    "F": {
+      "type": "item",
+      "code": "game:metalnailsandstrips-steel",
+      "quantity": 2
+    },
+    "G": {
+      "type": "item",
+      "code": "game:hammer-*",
+      "isTool": true,
+      "toolDurabilityCost": 100
+    },
+    "I": {
+      "type": "item",
+      "code": "game:leather-sturdy-plain",
+      "quantity": 2
+    }
+  },
+  "width": 3,
+  "height": 3,
+  "name": "Varangian platehead captainmasked steel",
+  "output": {
+    "type": "item",
+    "code": "favarangian:platehead-captainmasked-steel",
+    "attributes": { "types": { "coverhead": "none", "striphead": "none", "decorationhead": "none", "colorhead": "none" } }
+  }
+}
+]

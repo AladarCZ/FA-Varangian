@@ -1,0 +1,715 @@
+{
+	"code": "platelegs",
+	"variantgroups": [
+		{ "code": "version", "states": ["captain"] },
+		{ "code": "metal", "states": ["iron", "meteoriciron", "steel"] }
+	],
+	"maxstacksize": 1,
+	"attributes": {},
+	"durabilityByType": {
+		"*captain-iron": 3700,
+		"*captain-meteoriciron": 4300,
+		"*captain-steel": 7000
+	},
+	"renderAlphaTest": 0.25,
+	"storageFlags": 128,
+	"behaviorsByType": {
+		"*captain-iron": [
+			{
+				"name": "AttributeRenderingLibrary.GenerateCreativeStacks",
+				"properties": {
+					"variantgroups": [
+						{ "code": "coverlegs", "states": ["bismuth", "brass", "copper", "gold", "lead", "none", "silver"] },
+						{ "code": "striplegs", "states": ["bismuth", "brass", "copper", "gold", "lead", "none", "silver"] },
+						{ "code": "decorationlegs", "states": ["none", "lacinia", "bear", "wolf"] },
+						{ "code": "colorlegs", "states": ["none", "red", "rose", "green", "pine", "black", "blue", "navy", "brown", "white", "purple", "pink", "burgundy", "orange", "yellow", "gray", "plain"] }
+					],
+					"creativeinventory": {
+						"forgottenarmory": [
+							"coverlegs-none::striplegs-none::decorationlegs-none::colorlegs-none"
+						]
+					},
+					"allowedvariants": [
+						"decorationlegs-none::colorlegs-none",
+						"decorationlegs-bear::colorlegs-black",
+						"decorationlegs-bear::colorlegs-brown",
+						"decorationlegs-bear::colorlegs-white",
+						"decorationlegs-wolf::colorlegs-black",
+						"decorationlegs-wolf::colorlegs-brown",
+						"decorationlegs-wolf::colorlegs-white",
+						"decorationlegs-lacinia"
+					],
+					"skipvariants": [
+						"decorationlegs-lacinia::colorlegs-none"
+					]
+				}
+			},
+			{
+				"name": "AttributeRenderingLibrary.Wearable",
+				"properties": {
+					"textures": {
+						"coverlegs-none::decorationlegs-bear": {
+							"seraph": {
+								"base": "game:block/transparent"
+							},
+							"baselegs": {
+								"base": "favarangian:armor/entity/varangian/base/iron"
+							},
+							"striplegs": {
+								"base": "facore:armor/entity/trim/{striplegs}"
+							},
+							"colorlegs": {
+								"base": "facore:armor/entity/bear/{colorlegs}"
+							}
+						},
+						"coverlegs-none::decorationlegs-wolf": {
+							"seraph": {
+								"base": "game:block/transparent"
+							},
+							"baselegs": {
+								"base": "favarangian:armor/entity/varangian/base/iron"
+							},
+							"striplegs": {
+								"base": "facore:armor/entity/trim/{striplegs}"
+							},
+							"colorlegs": {
+								"base": "facore:armor/entity/wolf/{colorlegs}"
+							}
+						},
+						"coverlegs-*::decorationlegs-bear": {
+							"seraph": {
+								"base": "game:block/transparent"
+							},
+							"baselegs": {
+								"base": "favarangian:armor/entity/varangian/cover/iron/{coverlegs}"
+							},
+							"striplegs": {
+								"base": "facore:armor/entity/trim/{striplegs}"
+							},
+							"colorlegs": {
+								"base": "facore:armor/entity/bear/{colorlegs}"
+							}
+						},
+						"coverlegs-*::decorationlegs-wolf": {
+							"seraph": {
+								"base": "game:block/transparent"
+							},
+							"baselegs": {
+								"base": "favarangian:armor/entity/varangian/cover/iron/{coverlegs}"
+							},
+							"striplegs": {
+								"base": "facore:armor/entity/trim/{striplegs}"
+							},
+							"colorlegs": {
+								"base": "facore:armor/entity/wolf/{colorlegs}"
+							}
+						},
+						"coverlegs-none": {
+							"seraph": {
+								"base": "game:block/transparent"
+							},
+							"baselegs": {
+								"base": "favarangian:armor/entity/varangian/base/iron"
+							},
+							"striplegs": {
+								"base": "facore:armor/entity/trim/{striplegs}"
+							},
+							"colorlegs": {
+								"base": "facore:block/decorations/legs/{colorlegs}"
+							}
+						},
+						"coverlegs-*": {
+							"seraph": {
+								"base": "game:block/transparent"
+							},
+							"baselegs": {
+								"base": "favarangian:armor/entity/varangian/cover/iron/{coverlegs}"
+							},
+							"striplegs": {
+								"base": "facore:armor/entity/trim/{striplegs}"
+							},
+							"colorlegs": {
+								"base": "facore:block/decorations/legs/{colorlegs}"
+							}
+						}
+					},
+					"shape": {
+						"*": {
+							"base": "favarangian:entity/armor/varangian/platelegs/captain/{decorationlegs}legs"
+						}
+					},
+					"warmth": {
+						"decorationlegs-bear::@colorlegs-(black|brown)": 1,
+						"decorationlegs-bear::@colorlegs-white": 1.5,
+						"decorationlegs-wolf::@colorlegs-(black|brown)": 0.5,
+						"decorationlegs-wolf::@colorlegs-white": 1
+					},
+					"protectionModifiers": {
+						"*": {
+							"highDamageTierResistant": true,
+							"protectionTier": 3,
+							"flatDamageReduction": 3,
+							"relativeProtection": 0.97
+						}
+					},
+					"statModifiers": {
+						"decorationlegs-bear": {
+							"healingeffectivness": -0.15,
+							"walkSpeed": -0.1,
+							"rangedWeaponsSpeed": -0.1,
+							"rangedWeaponsAcc": -0.1,
+							"hungerrate": 0.15
+						},
+						"*": {
+							"healingeffectivness": -0.15,
+							"walkSpeed": -0.08,
+							"rangedWeaponsSpeed": -0.1,
+							"rangedWeaponsAcc": -0.1,
+							"hungerrate": 0.15
+						}
+					},
+					"visibleDamageEffect": {
+						"*": true
+					},
+					"clothesCategory": {
+						"*": "armorlegs"
+					},
+					"defaultProtLoss": {
+						"*": {
+							"perTierRelativeProtectionLoss": [
+								0.03,
+								0.15
+							],
+							"perTierFlatDamagereductionLoss": [
+								0.1,
+								0.2
+							]
+						}
+					},
+					"STFA_attachableToEntity": {
+						"categoryCode": {
+							"*": "armorlegs"
+						}
+					},
+					"description": {
+						"*": [
+							"-----------------------------",
+							"\u003cbr\u003e",
+							[
+								"Design: {0}",
+								"decorationlegs-{decorationlegs}"
+							],
+							"\u003cbr\u003e",
+							[
+								"Decoration: {0}",
+								"colorlegs-{colorlegs}"
+							],
+							"\u003cbr\u003e",
+							[
+								"Coating: {0}",
+								"coverlegs-{coverlegs}"
+							],
+							"\u003cbr\u003e",
+							[
+								"Trim: {0}",
+								"striplegs-{striplegs}"
+							],
+							"\u003cbr\u003e",
+							"-----------------------------",
+							"\u003cbr\u003e"
+						]
+					}
+				}
+			}
+		],
+		"*captain-meteoriciron": [
+			{
+				"name": "AttributeRenderingLibrary.GenerateCreativeStacks",
+				"properties": {
+					"variantgroups": [
+						{ "code": "coverlegs", "states": ["bismuth", "brass", "copper", "gold", "lead", "none", "silver"] },
+						{ "code": "striplegs", "states": ["bismuth", "brass", "copper", "gold", "lead", "none", "silver"] },
+						{ "code": "decorationlegs", "states": ["none", "lacinia", "bear", "wolf"] },
+						{ "code": "colorlegs", "states": ["none", "red", "rose", "green", "pine", "black", "blue", "navy", "brown", "white", "purple", "pink", "burgundy", "orange", "yellow", "gray", "plain"] }
+					],
+					"creativeinventory": {
+						"forgottenarmory": [
+							"coverlegs-none::striplegs-none::decorationlegs-none::colorlegs-none"
+						]
+					},
+					"allowedvariants": [
+						"decorationlegs-none::colorlegs-none",
+						"decorationlegs-bear::colorlegs-black",
+						"decorationlegs-bear::colorlegs-brown",
+						"decorationlegs-bear::colorlegs-white",
+						"decorationlegs-wolf::colorlegs-black",
+						"decorationlegs-wolf::colorlegs-brown",
+						"decorationlegs-wolf::colorlegs-white",
+						"decorationlegs-lacinia"
+					],
+					"skipvariants": [
+						"decorationlegs-lacinia::colorlegs-none"
+					]
+				}
+			},
+			{
+				"name": "AttributeRenderingLibrary.Wearable",
+				"properties": {
+					"textures": {
+						"coverlegs-none::decorationlegs-bear": {
+							"seraph": {
+								"base": "game:block/transparent"
+							},
+							"baselegs": {
+								"base": "favarangian:armor/entity/varangian/base/meteoriciron"
+							},
+							"striplegs": {
+								"base": "facore:armor/entity/trim/{striplegs}"
+							},
+							"colorlegs": {
+								"base": "facore:armor/entity/bear/{colorlegs}"
+							}
+						},
+						"coverlegs-none::decorationlegs-wolf": {
+							"seraph": {
+								"base": "game:block/transparent"
+							},
+							"baselegs": {
+								"base": "favarangian:armor/entity/varangian/base/meteoriciron"
+							},
+							"striplegs": {
+								"base": "facore:armor/entity/trim/{striplegs}"
+							},
+							"colorlegs": {
+								"base": "facore:armor/entity/wolf/{colorlegs}"
+							}
+						},
+						"coverlegs-*::decorationlegs-bear": {
+							"seraph": {
+								"base": "game:block/transparent"
+							},
+							"baselegs": {
+								"base": "favarangian:armor/entity/varangian/cover/meteoriciron/{coverlegs}"
+							},
+							"striplegs": {
+								"base": "facore:armor/entity/trim/{striplegs}"
+							},
+							"colorlegs": {
+								"base": "facore:armor/entity/bear/{colorlegs}"
+							}
+						},
+						"coverlegs-*::decorationlegs-wolf": {
+							"seraph": {
+								"base": "game:block/transparent"
+							},
+							"baselegs": {
+								"base": "favarangian:armor/entity/varangian/cover/meteoriciron/{coverlegs}"
+							},
+							"striplegs": {
+								"base": "facore:armor/entity/trim/{striplegs}"
+							},
+							"colorlegs": {
+								"base": "facore:armor/entity/wolf/{colorlegs}"
+							}
+						},
+						"coverlegs-none": {
+							"seraph": {
+								"base": "game:block/transparent"
+							},
+							"baselegs": {
+								"base": "favarangian:armor/entity/varangian/base/meteoriciron"
+							},
+							"striplegs": {
+								"base": "facore:armor/entity/trim/{striplegs}"
+							},
+							"colorlegs": {
+								"base": "facore:block/decorations/legs/{colorlegs}"
+							}
+						},
+						"coverlegs-*": {
+							"seraph": {
+								"base": "game:block/transparent"
+							},
+							"baselegs": {
+								"base": "favarangian:armor/entity/varangian/cover/meteoriciron/{coverlegs}"
+							},
+							"striplegs": {
+								"base": "facore:armor/entity/trim/{striplegs}"
+							},
+							"colorlegs": {
+								"base": "facore:block/decorations/legs/{colorlegs}"
+							}
+						}
+					},
+					"shape": {
+						"*": {
+							"base": "favarangian:entity/armor/varangian/platelegs/captain/{decorationlegs}legs"
+						}
+					},
+					"warmth": {
+						"decorationlegs-bear::@colorlegs-(black|brown)": 1,
+						"decorationlegs-bear::@colorlegs-white": 1.5,
+						"decorationlegs-wolf::@colorlegs-(black|brown)": 0.5,
+						"decorationlegs-wolf::@colorlegs-white": 1
+					},
+					"protectionModifiers": {
+						"*": {
+							"highDamageTierResistant": true,
+							"protectionTier": 3,
+							"flatDamageReduction": 3.2,
+							"relativeProtection": 0.975
+						}
+					},
+					"statModifiers": {
+						"decorationlegs-bear": {
+							"healingeffectivness": -0.15,
+							"walkSpeed": -0.1,
+							"rangedWeaponsSpeed": -0.1,
+							"rangedWeaponsAcc": -0.1,
+							"hungerrate": 0.15
+						},
+						"*": {
+							"healingeffectivness": -0.15,
+							"walkSpeed": -0.08,
+							"rangedWeaponsSpeed": -0.1,
+							"rangedWeaponsAcc": -0.1,
+							"hungerrate": 0.15
+						}
+					},
+					"visibleDamageEffect": {
+						"*": true
+					},
+					"clothesCategory": {
+						"*": "armorlegs"
+					},
+					"defaultProtLoss": {
+						"*": {
+							"perTierRelativeProtectionLoss": [
+								0.03,
+								0.15
+							],
+							"perTierFlatDamagereductionLoss": [
+								0.1,
+								0.2
+							]
+						}
+					},
+					"STFA_attachableToEntity": {
+						"categoryCode": {
+							"*": "armorlegs"
+						}
+					},
+					"description": {
+						"*": [
+							"-----------------------------",
+							"\u003cbr\u003e",
+							[
+								"Design: {0}",
+								"decorationlegs-{decorationlegs}"
+							],
+							"\u003cbr\u003e",
+							[
+								"Decoration: {0}",
+								"colorlegs-{colorlegs}"
+							],
+							"\u003cbr\u003e",
+							[
+								"Coating: {0}",
+								"coverlegs-{coverlegs}"
+							],
+							"\u003cbr\u003e",
+							[
+								"Trim: {0}",
+								"striplegs-{striplegs}"
+							],
+							"\u003cbr\u003e",
+							"-----------------------------",
+							"\u003cbr\u003e"
+						]
+					}
+				}
+			}
+		],
+		"*captain-steel": [
+			{
+				"name": "AttributeRenderingLibrary.GenerateCreativeStacks",
+				"properties": {
+					"variantgroups": [
+						{ "code": "coverlegs", "states": ["bismuth", "blackbronze", "bismuthbronze", "tinbronze", "brass", "copper", "cupronickel", "electrum", "gold", "lead", "meteoriciron", "none", "silver", "uranium", "zinc"] },
+						{ "code": "striplegs", "states": ["bismuth", "blackbronze", "bismuthbronze", "tinbronze", "brass", "copper", "cupronickel", "electrum", "gold", "lead", "meteoriciron", "none", "silver", "uranium", "zinc"] },
+						{ "code": "decorationlegs", "states": ["none", "lacinia", "bear", "wolf"] },
+						{ "code": "colorlegs", "states": ["none", "red", "rose", "green", "pine", "black", "blue", "navy", "brown", "white", "purple", "pink", "burgundy", "orange", "yellow", "gray", "plain"] }
+					],
+					"creativeinventory": {
+						"forgottenarmory": [
+							"coverlegs-none::striplegs-none::decorationlegs-none::colorlegs-none"
+						]
+					},
+					"allowedvariants": [
+						"decorationlegs-none::colorlegs-none",
+						"decorationlegs-bear::colorlegs-black",
+						"decorationlegs-bear::colorlegs-brown",
+						"decorationlegs-bear::colorlegs-white",
+						"decorationlegs-wolf::colorlegs-black",
+						"decorationlegs-wolf::colorlegs-brown",
+						"decorationlegs-wolf::colorlegs-white",
+						"decorationlegs-lacinia"
+					],
+					"skipvariants": [
+						"decorationlegs-lacinia::colorlegs-none"
+					]
+				}
+			},
+			{
+				"name": "AttributeRenderingLibrary.Wearable",
+				"properties": {
+					"textures": {
+						"coverlegs-none::decorationlegs-bear": {
+							"seraph": {
+								"base": "game:block/transparent"
+							},
+							"baselegs": {
+								"base": "favarangian:armor/entity/varangian/base/steel"
+							},
+							"striplegs": {
+								"base": "facore:armor/entity/trim/{striplegs}"
+							},
+							"colorlegs": {
+								"base": "facore:armor/entity/bear/{colorlegs}"
+							}
+						},
+						"coverlegs-none::decorationlegs-wolf": {
+							"seraph": {
+								"base": "game:block/transparent"
+							},
+							"baselegs": {
+								"base": "favarangian:armor/entity/varangian/base/steel"
+							},
+							"striplegs": {
+								"base": "facore:armor/entity/trim/{striplegs}"
+							},
+							"colorlegs": {
+								"base": "facore:armor/entity/wolf/{colorlegs}"
+							}
+						},
+						"coverlegs-*::decorationlegs-bear": {
+							"seraph": {
+								"base": "game:block/transparent"
+							},
+							"baselegs": {
+								"base": "favarangian:armor/entity/varangian/cover/steel/{coverlegs}"
+							},
+							"striplegs": {
+								"base": "facore:armor/entity/trim/{striplegs}"
+							},
+							"colorlegs": {
+								"base": "facore:armor/entity/bear/{colorlegs}"
+							}
+						},
+						"coverlegs-*::decorationlegs-wolf": {
+							"seraph": {
+								"base": "game:block/transparent"
+							},
+							"baselegs": {
+								"base": "favarangian:armor/entity/varangian/cover/steel/{coverlegs}"
+							},
+							"striplegs": {
+								"base": "facore:armor/entity/trim/{striplegs}"
+							},
+							"colorlegs": {
+								"base": "facore:armor/entity/wolf/{colorlegs}"
+							}
+						},
+						"coverlegs-none": {
+							"seraph": {
+								"base": "game:block/transparent"
+							},
+							"baselegs": {
+								"base": "favarangian:armor/entity/varangian/base/steel"
+							},
+							"striplegs": {
+								"base": "facore:armor/entity/trim/{striplegs}"
+							},
+							"colorlegs": {
+								"base": "facore:block/decorations/legs/{colorlegs}"
+							}
+						},
+						"coverlegs-*": {
+							"seraph": {
+								"base": "game:block/transparent"
+							},
+							"baselegs": {
+								"base": "favarangian:armor/entity/varangian/cover/steel/{coverlegs}"
+							},
+							"striplegs": {
+								"base": "facore:armor/entity/trim/{striplegs}"
+							},
+							"colorlegs": {
+								"base": "facore:block/decorations/legs/{colorlegs}"
+							}
+						}
+					},
+					"shape": {
+						"*": {
+							"base": "favarangian:entity/armor/varangian/platelegs/captain/{decorationlegs}legs"
+						}
+					},
+					"warmth": {
+						"decorationlegs-bear::@colorlegs-(black|brown)": 1,
+						"decorationlegs-bear::@colorlegs-white": 1.5,
+						"decorationlegs-wolf::@colorlegs-(black|brown)": 0.5,
+						"decorationlegs-wolf::@colorlegs-white": 1
+					},
+					"protectionModifiers": {
+						"*": {
+							"highDamageTierResistant": true,
+							"protectionTier": 4,
+							"flatDamageReduction": 3.5,
+							"relativeProtection": 0.98
+						}
+					},
+					"statModifiers": {
+						"decorationlegs-bear": {
+							"healingeffectivness": -0.15,
+							"walkSpeed": -0.1,
+							"rangedWeaponsSpeed": -0.1,
+							"rangedWeaponsAcc": -0.1,
+							"hungerrate": 0.15
+						},
+						"*": {
+							"healingeffectivness": -0.15,
+							"walkSpeed": -0.08,
+							"rangedWeaponsSpeed": -0.1,
+							"rangedWeaponsAcc": -0.1,
+							"hungerrate": 0.15
+						}
+					},
+					"visibleDamageEffect": {
+						"*": true
+					},
+					"clothesCategory": {
+						"*": "armorlegs"
+					},
+					"defaultProtLoss": {
+						"*": {
+							"perTierRelativeProtectionLoss": [
+								0.03,
+								0.15
+							],
+							"perTierFlatDamagereductionLoss": [
+								0.1,
+								0.2
+							]
+						}
+					},
+					"STFA_attachableToEntity": {
+						"categoryCode": {
+							"*": "armorlegs"
+						}
+					},
+					"description": {
+						"*": [
+							"-----------------------------",
+							"\u003cbr\u003e",
+							[
+								"Design: {0}",
+								"decorationlegs-{decorationlegs}"
+							],
+							"\u003cbr\u003e",
+							[
+								"Decoration: {0}",
+								"colorlegs-{colorlegs}"
+							],
+							"\u003cbr\u003e",
+							[
+								"Coating: {0}",
+								"coverlegs-{coverlegs}"
+							],
+							"\u003cbr\u003e",
+							[
+								"Trim: {0}",
+								"striplegs-{striplegs}"
+							],
+							"\u003cbr\u003e",
+							"-----------------------------",
+							"\u003cbr\u003e"
+						]
+					}
+				}
+			}
+		]
+	},
+	"heldTpIdleAnimation": "holdunderarm",
+	"fpHandTransform": {
+		"translation": {
+			"y": -1.2,
+			"z": -0.5,
+			"x": 0.4
+		},
+		"rotation": {
+			"y": -111,
+			"z": -180,
+			"x": 163
+		},
+		"scale": 2.15,
+		"origin": {
+			"y": 1.6,
+			"z": 0.5,
+			"x": 0.5
+		}
+	},
+	"tpHandTransform": {
+		"translation": {
+			"y": -0.6,
+			"z": -0.4,
+			"x": -0.7
+		},
+		"rotation": {
+			"y": -20,
+			"z": -91,
+			"x": 95
+		},
+		"scale": 0.74,
+		"origin": {
+			"y": 0.7,
+			"z": 0.5,
+			"x": 0.5
+		}
+	},
+	"guiTransform": {
+		"translation": {
+			"y": 0,
+			"z": 0,
+			"x": 1
+		},
+		"rotation": {
+			"y": -46,
+			"z": -180,
+			"x": -26
+		},
+		"scale": 1.25,
+		"origin": {
+			"y": 0.6,
+			"z": 0.5,
+			"x": 0.5
+		}
+	},
+	"groundTransform": {
+		"translation": {
+			"y": 0,
+			"z": 0,
+			"x": 0
+		},
+		"rotation": {
+			"y": 0,
+			"z": 90,
+			"x": 0
+		},
+		"scale": 3.1,
+		"origin": {
+			"y": 1.12,
+			"z": 0.5,
+			"x": 0.34
+		}
+	}
+}

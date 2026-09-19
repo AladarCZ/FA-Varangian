@@ -1,4 +1,4 @@
-{
+﻿{
 	"editor": {
 		"allAngles": false,
 		"entityTextureMode": false
@@ -6,10 +6,12 @@
 	"textureWidth": 16,
 	"textureHeight": 16,
 	"textureSizes": {
+		"map-blank": [16,16],
+		"schematic": [16,16]
 	},
 	"textures": {
 		"map-blank": "game:item/utility/map-blank",
-		"schematic": "utility/schematic-hussar"
+		"schematic": "favarangian:utility/schematic-varangian"
 	},
 	"elements": [
 		{

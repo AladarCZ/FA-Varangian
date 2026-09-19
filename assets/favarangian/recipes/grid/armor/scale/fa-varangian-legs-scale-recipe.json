@@ -1,0 +1,94 @@
+[
+  {
+    "ingredientPattern": "DBD,FEF,IGI",
+    "recipeGroup": 1,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "favarangian:fa-varangian-schematic",
+        "returnedStack": { "type": "item", "code": "favarangian:fa-varangian-schematic" }
+      },
+      "D": {
+        "type": "item",
+        "code": "game:metalchain-*",
+        "name": "metal",
+        "allowedVariants": ["iron", "meteoriciron"]
+      },
+      "E": {
+        "type": "item",
+        "code": "game:armor-legs-scale-*",
+        "name": "metal",
+        "allowedVariants": ["iron", "meteoriciron"]
+      },
+      "F": {
+        "type": "item",
+        "code": "game:metalnailsandstrips-*",
+        "name": "metal",
+        "allowedVariants": ["iron", "meteoriciron"],
+        "quantity": 4
+      },
+      "G": {
+        "type": "item",
+        "code": "game:hammer-*",
+        "isTool": true,
+        "toolDurabilityCost": 100
+      },
+      "I": {
+        "type": "item",
+        "code": "game:leather-normal-plain",
+        "quantity": 4
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "name": "Varangian scalelegs guard {metal}",
+    "output": {
+      "type": "item",
+      "code": "favarangian:scalelegs-guard-{metal}",
+      "attributes": { "types": { "coverlegs": "none", "striplegs": "none", "decorationlegs": "none", "colorlegs": "none" } }
+    }
+  },
+  {
+    "ingredientPattern": "DBD,FEF,IGI",
+    "recipeGroup": 1,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "favarangian:fa-varangian-schematic",
+        "returnedStack": { "type": "item", "code": "favarangian:fa-varangian-schematic" }
+      },
+      "D": {
+        "type": "item",
+        "code": "game:metalchain-steel"
+      },
+      "E": {
+        "type": "item",
+        "code": "game:armor-legs-scale-steel"
+      },
+      "F": {
+        "type": "item",
+        "code": "game:metalnailsandstrips-steel",
+        "quantity": 4
+      },
+      "G": {
+        "type": "item",
+        "code": "game:hammer-*",
+        "isTool": true,
+        "toolDurabilityCost": 100
+      },
+      "I": {
+        "type": "item",
+        "code": "game:leather-sturdy-plain",
+        "quantity": 4
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "name": "Varangian scalelegs guard steel",
+    "output": {
+      "type": "item",
+      "code": "favarangian:scalelegs-guard-steel",
+      "attributes": { "types": { "coverlegs": "none", "striplegs": "none", "decorationlegs": "none", "colorlegs": "none" } }
+    }
+  }
+]

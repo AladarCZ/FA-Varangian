@@ -1,0 +1,179 @@
+[
+	{
+		"file": "favarangian:itemtypes/wearable/varangian/platelegs",
+		"op": "addmerge",
+		"path": "/behaviorsByType",
+		"dependsOn": [
+			{ "modId": "combatoverhaulfork" }
+		],
+		"value": {
+			"*captain-iron": [
+				{ "name": "CombatOverhaul:WearableArmor" },
+				{
+					"name": "CombatOverhaul:Armor",
+					"propertiesByType": {
+						"platelegs-captain-iron*": {
+							"Layers": ["Outer"],
+							"Zones": ["Legs","Feet"],
+							"Resists": {
+								"SlashingAttack": 7,
+								"PiercingAttack": 9,
+								"BluntAttack": 7
+							},
+							"FlatReduction": {},
+							"PlayerStats": {
+								"steadyAim": 0,
+								"walkspeed": -0.15,
+								"manipulationSpeed": 0,
+								"hungerrate": 0.08,
+								"healingeffectivness": -0.06
+							}
+						}
+					}
+				}
+			],
+			"*captain-meteoriciron": [
+				{ "name": "CombatOverhaul:WearableArmor" },
+				{
+					"name": "CombatOverhaul:Armor",
+					"propertiesByType": {
+						"platelegs-captain-meteoriciron*": {
+							"Layers": ["Outer"],
+							"Zones": ["Legs","Feet"],
+							"Resists": {
+								"SlashingAttack": 7,
+								"PiercingAttack": 9,
+								"BluntAttack": 7
+							},
+							"FlatReduction": {},
+							"PlayerStats": {
+								"steadyAim": 0,
+								"walkspeed": -0.15,
+								"manipulationSpeed": 0,
+								"hungerrate": 0.08,
+								"healingeffectivness": -0.06
+							}
+						}
+					}
+				}
+			],
+			"*captain-steel": [
+				{ "name": "CombatOverhaul:WearableArmor" },
+				{
+					"name": "CombatOverhaul:Armor",
+					"propertiesByType": {
+						"platelegs-captain-steel*": {
+							"Layers": ["Outer"],
+							"Zones": ["Legs","Feet"],
+							"Resists": {
+								"SlashingAttack": 8,
+								"PiercingAttack": 10,
+								"BluntAttack": 8
+							},
+							"FlatReduction": {},
+							"PlayerStats": {
+								"steadyAim": 0,
+								"walkspeed": -0.15,
+								"manipulationSpeed": 0,
+								"hungerrate": 0.08,
+								"healingeffectivness": -0.06
+							}
+						}
+					}
+				}
+			]
+		}
+	},
+	{
+		"file": "favarangian:itemtypes/wearable/varangian/platelegs",
+		"op": "addmerge",
+		"path": "/durabilityByType",
+		"dependsOn": [
+			{ "modId": "combatoverhaulfork" }
+		],
+		"value": {
+			"platelegs-captain-iron*": 10500,
+			"platelegs-captain-meteoriciron*": 13000,
+			"platelegs-captain-steel*": 25000
+		}
+	},
+	{
+		"file": "favarangian:itemtypes/wearable/varangian/platelegs",
+		"dependsOn": [
+			{ "modId": "combatoverhaulfork" }
+		],
+		"op": "remove",
+		"path": "/behaviorsByType/*captain-iron/1/properties/protectionModifiers"
+	},
+	{
+		"file": "favarangian:itemtypes/wearable/varangian/platelegs",
+		"dependsOn": [
+			{ "modId": "combatoverhaulfork" }
+		],
+		"op": "remove",
+		"path": "/behaviorsByType/*captain-iron/1/properties/statModifiers"
+	},
+	{
+		"file": "favarangian:itemtypes/wearable/varangian/platelegs",
+		"dependsOn": [
+			{ "modId": "combatoverhaulfork" }
+		],
+		"op": "remove",
+		"path": "/behaviorsByType/*captain-meteoriciron/1/properties/protectionModifiers"
+	},
+	{
+		"file": "favarangian:itemtypes/wearable/varangian/platelegs",
+		"dependsOn": [
+			{ "modId": "combatoverhaulfork" }
+		],
+		"op": "remove",
+		"path": "/behaviorsByType/*captain-meteoriciron/1/properties/statModifiers"
+	},
+	{
+		"file": "favarangian:itemtypes/wearable/varangian/platelegs",
+		"dependsOn": [
+			{ "modId": "combatoverhaulfork" }
+		],
+		"op": "remove",
+		"path": "/behaviorsByType/*captain-steel/1/properties/protectionModifiers"
+	},
+	{
+		"file": "favarangian:itemtypes/wearable/varangian/platelegs",
+		"dependsOn": [
+			{ "modId": "combatoverhaulfork" }
+		],
+		"op": "remove",
+		"path": "/behaviorsByType/*captain-steel/1/properties/statModifiers"
+	},
+	{
+		"file": "favarangian:itemtypes/wearable/varangian/platelegs",
+		"dependsOn": [
+			{ "modId": "combatoverhaulfork" }
+		],
+		"op": "addmerge",
+		"path": "/class",
+		"value": "Item"
+	},
+	{
+		"file": "favarangian:itemtypes/wearable/varangian/platelegs",
+		"dependsOn": [
+			{ "modId": "combatoverhaulfork" }
+		],
+		"op": "addmerge",
+		"path": "/attributes",
+		"value": {
+			"clothesCategory": "armorlegs"
+		}
+	},
+	{
+		"file": "favarangian:itemtypes/wearable/varangian/platelegs",
+		"dependsOn": [
+			{ "modId": "combatoverhaulfork" }
+		],
+		"op": "add",
+		"path": "/attributes/materialCountByType",
+		"value": {
+			"platelegs-*": 8
+		}
+	}
+]

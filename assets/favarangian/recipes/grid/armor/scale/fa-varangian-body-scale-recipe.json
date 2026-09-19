@@ -1,0 +1,96 @@
+[
+  {
+  "ingredientPattern": "DB_,FEF,IGI",
+  "recipeGroup": 1,
+  "ingredients": {
+    "B": {
+      "type": "item",
+      "code": "favarangian:fa-varangian-schematic",
+      "returnedStack": { "type": "item", "code": "favarangian:fa-varangian-schematic" }
+    },
+    "D": {
+      "type": "item",
+      "code": "game:metalplate-*",
+      "name": "metal",
+      "allowedVariants": ["iron", "meteoriciron"],
+      "quantity": 2
+    },
+    "E": {
+      "type": "item",
+      "code": "game:armor-body-scale-*",
+      "name": "metal",
+      "allowedVariants": ["iron", "meteoriciron"]
+    },
+    "F": {
+      "type": "item",
+      "code": "game:metalnailsandstrips-*",
+      "name": "metal",
+      "allowedVariants": ["iron", "meteoriciron"],
+      "quantity": 6
+    },
+    "G": {
+      "type": "item",
+      "code": "game:hammer-*",
+      "isTool": true,
+      "toolDurabilityCost": 100
+    },
+    "I": {
+      "type": "item",
+      "code": "game:leather-normal-plain",
+      "quantity": 6
+    }
+  },
+  "width": 3,
+  "height": 3,
+  "name": "Varangian scalebody guard {metal}",
+  "output": {
+    "type": "item",
+    "code": "favarangian:scalebody-guard-{metal}",
+    "attributes": { "types": { "coverbody": "none", "stripbody": "none", "decorationbody": "none", "colorbody": "none" } }
+  }
+},
+  {
+  "ingredientPattern": "DB_,FEF,IGI",
+  "recipeGroup": 1,
+  "ingredients": {
+    "B": {
+      "type": "item",
+      "code": "favarangian:fa-varangian-schematic",
+      "returnedStack": { "type": "item", "code": "favarangian:fa-varangian-schematic" }
+    },
+    "D": {
+      "type": "item",
+      "code": "game:metalplate-steel",
+      "quantity": 2
+    },
+    "E": {
+      "type": "item",
+      "code": "game:armor-body-scale-steel"
+    },
+    "F": {
+      "type": "item",
+      "code": "game:metalnailsandstrips-steel",
+      "quantity": 6
+    },
+    "G": {
+      "type": "item",
+      "code": "game:hammer-*",
+      "isTool": true,
+      "toolDurabilityCost": 100
+    },
+    "I": {
+      "type": "item",
+      "code": "game:leather-sturdy-plain",
+      "quantity": 6
+    }
+  },
+  "width": 3,
+  "height": 3,
+  "name": "Varangian scalebody guard steel",
+  "output": {
+    "type": "item",
+    "code": "favarangian:scalebody-guard-steel",
+    "attributes": { "types": { "coverbody": "none", "stripbody": "none", "decorationbody": "none", "colorbody": "none" } }
+  }
+}
+]

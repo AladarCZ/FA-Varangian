@@ -2,7 +2,11 @@
   "type": "content",
   "modid": "favarangian",
   "name": "Forgotten Armory Varangian",
-  "authors": ["AladarCZ", "Svanax"],
-  "description": "Mod adding multiple iron and beyond plate and scale armor variations inspired by the Varangian",
-  "version": "1.0.1"
+  "authors": ["AladarCZ"],
+  "description": "Varangian-inspired plate and scale armor variations.",
+  "version": "2.0.0",
+  "dependencies": {
+    "facore": "1.1.0",
+    "attributerenderinglibrary": "3.2.0"
+  }
 }

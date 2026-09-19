@@ -1,0 +1,4 @@
+[
+	{ "ingredientPattern": "A", "recipeGroup": 1, "ingredients": { "A": { "type": "item", "code": "fa-varangian-schematic" } }, "width": 1, "height": 1, "name": "Roll Scroll", "output": { "type": "item", "code": "fa-varangian-rolled-schematic" } },
+	{ "ingredientPattern": "A", "recipeGroup": 1, "ingredients": { "A": { "type": "item", "code": "fa-varangian-rolled-schematic" } }, "width": 1, "height": 1, "name": "Unroll Scroll", "output": { "type": "item", "code": "fa-varangian-schematic" } }
+]

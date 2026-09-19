@@ -1,0 +1,463 @@
+{
+	"code": "platebody",
+	"variantgroups": [
+		{ "code": "version", "states": ["captain", "myrmidon", "veteran"] },
+		{ "code": "metal", "states": ["iron", "meteoriciron", "steel"] }
+	],
+	"maxstacksize": 1,
+	"attributes": {},
+	"durabilityByType": { 
+		"*-iron": 3700, 
+		"*-meteoriciron": 4300, 
+		"*-steel": 7000
+	},
+	"renderAlphaTest": 0.25,
+	"storageFlags": 128,
+	"behaviorsByType": {
+		"*-iron": [
+			{
+				"name": "AttributeRenderingLibrary.GenerateCreativeStacks",
+				"properties": {
+					"variantgroups": [
+						{ "code": "coverbody", "states": ["bismuth", "brass", "copper", "gold", "lead", "none", "silver"] },
+						{ "code": "stripbody", "states": ["bismuth", "brass", "copper", "gold", "lead", "none", "silver"] },
+						{ "code": "decorationbody", "states": ["none", "insignia", "mantellum", "bear", "wolf"] },
+						{ "code": "colorbody", "states": ["none", "red", "rose", "green", "pine", "black", "blue", "navy", "brown", "white", "purple", "pink", "burgundy", "orange", "yellow", "gray", "plain"] }
+					],
+					"creativeinventory": { "forgottenarmory": ["coverbody-none::stripbody-none::decorationbody-none::colorbody-none"] },
+					"allowedvariants": [
+						"decorationbody-none::colorbody-none",
+						"decorationbody-bear::colorbody-black",
+						"decorationbody-bear::colorbody-brown",
+						"decorationbody-bear::colorbody-white",
+						"decorationbody-wolf::colorbody-black",
+						"decorationbody-wolf::colorbody-brown",
+						"decorationbody-wolf::colorbody-white",
+						"decorationbody-insignia",
+						"decorationbody-mantellum"
+					],
+					"skipvariants": [
+						"decorationbody-insignia::colorbody-none",
+						"decorationbody-mantellum::colorbody-none"
+					]
+				}
+			},
+			{
+				"name": "AttributeRenderingLibrary.Wearable",
+				"properties": {
+					"textures": {
+						"coverbody-none::decorationbody-bear": {
+							"seraph": { "base": "game:block/transparent" },
+							"basebody": { "base": "favarangian:armor/entity/varangian/base/iron" },
+							"stripbody": {
+								"base": "facore:armor/entity/trim/{stripbody}"
+							},
+							"colorbody": {
+								"base": "facore:armor/entity/bear/{colorbody}"
+							}
+						},
+						"coverbody-none::decorationbody-wolf": {
+							"seraph": { "base": "game:block/transparent" },
+							"basebody": { "base": "favarangian:armor/entity/varangian/base/iron" },
+							"stripbody": {
+								"base": "facore:armor/entity/trim/{stripbody}"
+							},
+							"colorbody": {
+								"base": "facore:armor/entity/wolf/{colorbody}"
+							}
+						},
+						"coverbody-*::decorationbody-bear": {
+							"seraph": { "base": "game:block/transparent" },
+							"basebody": {
+								"base": "favarangian:armor/entity/varangian/cover/iron/{coverbody}"
+							},
+							"stripbody": {
+								"base": "facore:armor/entity/trim/{stripbody}"
+							},
+							"colorbody": {
+								"base": "facore:armor/entity/bear/{colorbody}"
+							}
+						},
+						"coverbody-*::decorationbody-wolf": {
+							"seraph": { "base": "game:block/transparent" },
+							"basebody": {
+								"base": "favarangian:armor/entity/varangian/cover/iron/{coverbody}"
+							},
+							"stripbody": {
+								"base": "facore:armor/entity/trim/{stripbody}"
+							},
+							"colorbody": {
+								"base": "facore:armor/entity/wolf/{colorbody}"
+							}
+						},
+						"coverbody-none": {
+							"seraph": { "base": "game:block/transparent" },
+							"basebody": { "base": "favarangian:armor/entity/varangian/base/iron" },
+							"stripbody": {
+								"base": "facore:armor/entity/trim/{stripbody}"
+							},
+							"colorbody": {
+								"base": "facore:block/decorations/body/{colorbody}"
+							}
+						},
+						"coverbody-*": {
+							"seraph": { "base": "game:block/transparent" },
+							"basebody": {
+								"base": "favarangian:armor/entity/varangian/cover/iron/{coverbody}"
+							},
+							"stripbody": {
+								"base": "facore:armor/entity/trim/{stripbody}"
+							},
+							"colorbody": {
+								"base": "facore:block/decorations/body/{colorbody}"
+							}
+						}
+					},
+					"shape": {
+						"*": {
+							"base": "favarangian:entity/armor/varangian/platebody/{version}/{decorationbody}body"
+						}
+					},
+					"warmth": { "decorationbody-bear::@colorbody-(black|brown)": 1, "decorationbody-bear::@colorbody-white": 1.5, "decorationbody-wolf::@colorbody-(black|brown)": 0.5, "decorationbody-wolf::@colorbody-white": 1 },
+					"protectionModifiers": {
+						"*": { "highDamageTierResistant": true, "protectionTier": 3, "flatDamageReduction": 3, "relativeProtection": 0.97 }
+					},
+					"statModifiers": {
+						"decorationbody-bear": { "healingeffectivness": -0.15, "walkSpeed": -0.1, "rangedWeaponsSpeed": -0.1, "rangedWeaponsAcc": -0.1, "hungerrate": 0.15 },
+						"*": { "healingeffectivness": -0.15, "walkSpeed": -0.08, "rangedWeaponsSpeed": -0.1, "rangedWeaponsAcc": -0.1, "hungerrate": 0.15 }
+					},
+					"visibleDamageEffect": { "*": true },
+					"footStepSound": { "*": "game:wearable/plate*" },
+					"clothesCategory": { "*": "armorbody" },
+					"defaultProtLoss": {
+						"*": { "perTierRelativeProtectionLoss": [0.03, 0.15], "perTierFlatDamagereductionLoss": [0.1, 0.2] }
+					},
+					"STFA_attachableToEntity": {
+						"categoryCode": { "*": "armorbody" }
+					},
+					"description": {
+						"*": [
+							"-----------------------------",
+							"\u003cbr\u003e",
+							["Design: {0}", "decorationbody-{decorationbody}"],
+							"\u003cbr\u003e",
+							["Decoration: {0}", "colorbody-{colorbody}"],
+							"\u003cbr\u003e",
+							["Coating: {0}", "coverbody-{coverbody}"],
+							"\u003cbr\u003e",
+							["Trim: {0}", "stripbody-{stripbody}"],
+							"\u003cbr\u003e",
+							"-----------------------------",
+							"\u003cbr\u003e"
+						]
+					}
+				}
+			}
+		],
+		"*-meteoriciron": [
+			{
+				"name": "AttributeRenderingLibrary.GenerateCreativeStacks",
+				"properties": {
+					"variantgroups": [
+						{ "code": "coverbody", "states": ["bismuth", "brass", "copper", "gold", "lead", "none", "silver"] },
+						{ "code": "stripbody", "states": ["bismuth", "brass", "copper", "gold", "lead", "none", "silver"] },
+						{ "code": "decorationbody", "states": ["none", "insignia", "mantellum", "bear", "wolf"] },
+						{ "code": "colorbody", "states": ["none", "red", "rose", "green", "pine", "black", "blue", "navy", "brown", "white", "purple", "pink", "burgundy", "orange", "yellow", "gray", "plain"] }
+					],
+					"creativeinventory": { "forgottenarmory": ["coverbody-none::stripbody-none::decorationbody-none::colorbody-none"] },
+					"allowedvariants": [
+						"decorationbody-none::colorbody-none",
+						"decorationbody-bear::colorbody-black",
+						"decorationbody-bear::colorbody-brown",
+						"decorationbody-bear::colorbody-white",
+						"decorationbody-wolf::colorbody-black",
+						"decorationbody-wolf::colorbody-brown",
+						"decorationbody-wolf::colorbody-white",
+						"decorationbody-insignia",
+						"decorationbody-mantellum"
+					],
+					"skipvariants": [
+						"decorationbody-insignia::colorbody-none",
+						"decorationbody-mantellum::colorbody-none"
+					]
+				}
+			},
+			{
+				"name": "AttributeRenderingLibrary.Wearable",
+				"properties": {
+					"textures": {
+						"coverbody-none::decorationbody-bear": {
+							"seraph": { "base": "game:block/transparent" },
+							"basebody": { "base": "favarangian:armor/entity/varangian/base/meteoriciron" },
+							"stripbody": {
+								"base": "facore:armor/entity/trim/{stripbody}"
+							},
+							"colorbody": {
+								"base": "facore:armor/entity/bear/{colorbody}"
+							}
+						},
+						"coverbody-none::decorationbody-wolf": {
+							"seraph": { "base": "game:block/transparent" },
+							"basebody": { "base": "favarangian:armor/entity/varangian/base/meteoriciron" },
+							"stripbody": {
+								"base": "facore:armor/entity/trim/{stripbody}"
+							},
+							"colorbody": {
+								"base": "facore:armor/entity/wolf/{colorbody}"
+							}
+						},
+						"coverbody-*::decorationbody-bear": {
+							"seraph": { "base": "game:block/transparent" },
+							"basebody": {
+								"base": "favarangian:armor/entity/varangian/cover/meteoriciron/{coverbody}"
+							},
+							"stripbody": {
+								"base": "facore:armor/entity/trim/{stripbody}"
+							},
+							"colorbody": {
+								"base": "facore:armor/entity/bear/{colorbody}"
+							}
+						},
+						"coverbody-*::decorationbody-wolf": {
+							"seraph": { "base": "game:block/transparent" },
+							"basebody": {
+								"base": "favarangian:armor/entity/varangian/cover/meteoriciron/{coverbody}"
+							},
+							"stripbody": {
+								"base": "facore:armor/entity/trim/{stripbody}"
+							},
+							"colorbody": {
+								"base": "facore:armor/entity/wolf/{colorbody}"
+							}
+						},
+						"coverbody-none": {
+							"seraph": { "base": "game:block/transparent" },
+							"basebody": { "base": "favarangian:armor/entity/varangian/base/meteoriciron" },
+							"stripbody": {
+								"base": "facore:armor/entity/trim/{stripbody}"
+							},
+							"colorbody": {
+								"base": "facore:block/decorations/body/{colorbody}"
+							}
+						},
+						"coverbody-*": {
+							"seraph": { "base": "game:block/transparent" },
+							"basebody": {
+								"base": "favarangian:armor/entity/varangian/cover/meteoriciron/{coverbody}"
+							},
+							"stripbody": {
+								"base": "facore:armor/entity/trim/{stripbody}"
+							},
+							"colorbody": {
+								"base": "facore:block/decorations/body/{colorbody}"
+							}
+						}
+					},
+					"shape": {
+						"*": {
+							"base": "favarangian:entity/armor/varangian/platebody/{version}/{decorationbody}body"
+						}
+					},
+					"warmth": { "decorationbody-bear::@colorbody-(black|brown)": 1, "decorationbody-bear::@colorbody-white": 1.5, "decorationbody-wolf::@colorbody-(black|brown)": 0.5, "decorationbody-wolf::@colorbody-white": 1 },
+					"protectionModifiers": {
+						"*": { "highDamageTierResistant": true, "protectionTier": 3, "flatDamageReduction": 3.2, "relativeProtection": 0.975 }
+					},
+					"statModifiers": {
+						"decorationbody-bear": { "healingeffectivness": -0.15, "walkSpeed": -0.1, "rangedWeaponsSpeed": -0.1, "rangedWeaponsAcc": -0.1, "hungerrate": 0.15 },
+						"*": { "healingeffectivness": -0.15, "walkSpeed": -0.08, "rangedWeaponsSpeed": -0.1, "rangedWeaponsAcc": -0.1, "hungerrate": 0.15 }
+					},
+					"visibleDamageEffect": { "*": true },
+					"footStepSound": { "*": "game:wearable/plate*" },
+					"clothesCategory": { "*": "armorbody" },
+					"defaultProtLoss": {
+						"*": { "perTierRelativeProtectionLoss": [0.03, 0.15], "perTierFlatDamagereductionLoss": [0.1, 0.2] }
+					},
+					"STFA_attachableToEntity": {
+						"categoryCode": { "*": "armorbody" }
+					},
+					"description": {
+						"*": [
+							"-----------------------------",
+							"\u003cbr\u003e",
+							["Design: {0}", "decorationbody-{decorationbody}"],
+							"\u003cbr\u003e",
+							["Decoration: {0}", "colorbody-{colorbody}"],
+							"\u003cbr\u003e",
+							["Coating: {0}", "coverbody-{coverbody}"],
+							"\u003cbr\u003e",
+							["Trim: {0}", "stripbody-{stripbody}"],
+							"\u003cbr\u003e",
+							"-----------------------------",
+							"\u003cbr\u003e"
+						]
+					}
+				}
+			}
+		],
+		"*-steel": [
+			{
+				"name": "AttributeRenderingLibrary.GenerateCreativeStacks",
+				"properties": {
+					"variantgroups": [
+						{ "code": "coverbody", "states": ["bismuth", "blackbronze", "bismuthbronze", "tinbronze", "brass", "copper", "cupronickel", "electrum", "gold", "lead", "meteoriciron", "none", "silver", "uranium", "zinc"] },
+						{ "code": "stripbody", "states": ["bismuth", "blackbronze", "bismuthbronze", "tinbronze", "brass", "copper", "cupronickel", "electrum", "gold", "lead", "meteoriciron", "none", "silver", "uranium", "zinc"] },
+						{ "code": "decorationbody", "states": ["none", "insignia", "mantellum", "bear", "wolf"] },
+						{ "code": "colorbody", "states": ["none", "red", "rose", "green", "pine", "black", "blue", "navy", "brown", "white", "purple", "pink", "burgundy", "orange", "yellow", "gray", "plain"] }
+					],
+					"creativeinventory": { "forgottenarmory": ["coverbody-none::stripbody-none::decorationbody-none::colorbody-none"] },
+					"allowedvariants": [
+						"decorationbody-none::colorbody-none",
+						"decorationbody-bear::colorbody-black",
+						"decorationbody-bear::colorbody-brown",
+						"decorationbody-bear::colorbody-white",
+						"decorationbody-wolf::colorbody-black",
+						"decorationbody-wolf::colorbody-brown",
+						"decorationbody-wolf::colorbody-white",
+						"decorationbody-insignia",
+						"decorationbody-mantellum"
+					],
+					"skipvariants": [
+						"decorationbody-insignia::colorbody-none",
+						"decorationbody-mantellum::colorbody-none"
+					]
+				}
+			},
+			{
+				"name": "AttributeRenderingLibrary.Wearable",
+				"properties": {
+					"textures": {
+						"coverbody-none::decorationbody-bear": {
+							"seraph": { "base": "game:block/transparent" },
+							"basebody": { "base": "favarangian:armor/entity/varangian/base/steel" },
+							"stripbody": {
+								"base": "facore:armor/entity/trim/{stripbody}"
+							},
+							"colorbody": {
+								"base": "facore:armor/entity/bear/{colorbody}"
+							}
+						},
+						"coverbody-none::decorationbody-wolf": {
+							"seraph": { "base": "game:block/transparent" },
+							"basebody": { "base": "favarangian:armor/entity/varangian/base/steel" },
+							"stripbody": {
+								"base": "facore:armor/entity/trim/{stripbody}"
+							},
+							"colorbody": {
+								"base": "facore:armor/entity/wolf/{colorbody}"
+							}
+						},
+						"coverbody-*::decorationbody-bear": {
+							"seraph": { "base": "game:block/transparent" },
+							"basebody": {
+								"base": "favarangian:armor/entity/varangian/cover/steel/{coverbody}"
+							},
+							"stripbody": {
+								"base": "facore:armor/entity/trim/{stripbody}"
+							},
+							"colorbody": {
+								"base": "facore:armor/entity/bear/{colorbody}"
+							}
+						},
+						"coverbody-*::decorationbody-wolf": {
+							"seraph": { "base": "game:block/transparent" },
+							"basebody": {
+								"base": "favarangian:armor/entity/varangian/cover/steel/{coverbody}"
+							},
+							"stripbody": {
+								"base": "facore:armor/entity/trim/{stripbody}"
+							},
+							"colorbody": {
+								"base": "facore:armor/entity/wolf/{colorbody}"
+							}
+						},
+						"coverbody-none": {
+							"seraph": { "base": "game:block/transparent" },
+							"basebody": { "base": "favarangian:armor/entity/varangian/base/steel" },
+							"stripbody": {
+								"base": "facore:armor/entity/trim/{stripbody}"
+							},
+							"colorbody": {
+								"base": "facore:block/decorations/body/{colorbody}"
+							}
+						},
+						"coverbody-*": {
+							"seraph": { "base": "game:block/transparent" },
+							"basebody": {
+								"base": "favarangian:armor/entity/varangian/cover/steel/{coverbody}"
+							},
+							"stripbody": {
+								"base": "facore:armor/entity/trim/{stripbody}"
+							},
+							"colorbody": {
+								"base": "facore:block/decorations/body/{colorbody}"
+							}
+						}
+					},
+					"shape": {
+						"*": {
+							"base": "favarangian:entity/armor/varangian/platebody/{version}/{decorationbody}body"
+						}
+					},
+					"warmth": { "decorationbody-bear::@colorbody-(black|brown)": 1, "decorationbody-bear::@colorbody-white": 1.5, "decorationbody-wolf::@colorbody-(black|brown)": 0.5, "decorationbody-wolf::@colorbody-white": 1 },
+					"protectionModifiers": {
+						"*": { "highDamageTierResistant": true, "protectionTier": 4, "flatDamageReduction": 3.5, "relativeProtection": 0.98 }
+					},
+					"statModifiers": {
+						"decorationbody-bear": { "healingeffectivness": -0.15, "walkSpeed": -0.1, "rangedWeaponsSpeed": -0.1, "rangedWeaponsAcc": -0.1, "hungerrate": 0.15 },
+						"*": { "healingeffectivness": -0.15, "walkSpeed": -0.08, "rangedWeaponsSpeed": -0.1, "rangedWeaponsAcc": -0.1, "hungerrate": 0.15 }
+					},
+					"visibleDamageEffect": { "*": true },
+					"footStepSound": { "*": "game:wearable/plate*" },
+					"clothesCategory": { "*": "armorbody" },
+					"defaultProtLoss": {
+						"*": { "perTierRelativeProtectionLoss": [0.03, 0.15], "perTierFlatDamagereductionLoss": [0.1, 0.2] }
+					},
+					"STFA_attachableToEntity": {
+						"categoryCode": { "*": "armorbody" }
+					},
+					"description": {
+						"*": [
+							"-----------------------------",
+							"\u003cbr\u003e",
+							["Design: {0}", "decorationbody-{decorationbody}"],
+							"\u003cbr\u003e",
+							["Decoration: {0}", "colorbody-{colorbody}"],
+							"\u003cbr\u003e",
+							["Coating: {0}", "coverbody-{coverbody}"],
+							"\u003cbr\u003e",
+							["Trim: {0}", "stripbody-{stripbody}"],
+							"\u003cbr\u003e",
+							"-----------------------------",
+							"\u003cbr\u003e"
+						]
+					}
+				}
+			}
+		]
+	},
+	"heldTpIdleAnimation": "holdunderarm",
+	"fpHandTransform": {
+		"translation": { "y": -1.2, "z": -0.5, "x": 0.4 },
+		"rotation": { "y": -111, "z": -180, "x": 163 },
+		"scale": 2.15,
+		"origin": { "y": 1.6, "z": 0.5, "x": 0.5 }
+	},
+	"tpHandTransform": {
+		"translation": { "y": -1.9, "z": -0.5, "x": -1 },
+		"rotation": { "y": -168, "z": 94, "x": 97 },
+		"scale": 0.67,
+		"origin": { "y": 1.5, "z": 0.5, "x": 0.5 }
+	},
+	"guiTransform": {
+		"translation": { "y": 0, "z": 0, "x": 3 },
+		"rotation": { "y": -46, "z": -180, "x": -26 },
+		"scale": 1.37,
+		"origin": { "y": 1.11, "z": 0.5, "x": 0.6 }
+	},
+	"groundTransform": {
+		"translation": { "y": 0, "z": 0, "x": 0 },
+		"rotation": { "y": 0, "z": 0, "x": 0 },
+		"scale": 3.1,
+		"origin": { "y": 1.12, "z": 0.5, "x": 0.34 }
+	}
+}

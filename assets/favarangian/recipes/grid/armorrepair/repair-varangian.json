@@ -1,0 +1,734 @@
+[
+	{
+		"ingredientPattern": "AL,P_",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "favarangian:scalehead-guard-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"]
+			},
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"]
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-normal-plain"
+			}
+		},
+		"copyAttributesFrom": "A",
+		"averageDurability": false,
+		"width": 2,
+		"height": 2,
+		"shapeless": true,
+		"name": "Guard scale head repair",
+		"output": {
+			"type": "item",
+			"code": "favarangian:scalehead-guard-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "AL,P_",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "favarangian:scalehead-guard-steel"
+			},
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-steel"
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-sturdy-plain"
+			}
+		},
+		"copyAttributesFrom": "A",
+		"averageDurability": false,
+		"width": 2,
+		"height": 2,
+		"shapeless": true,
+		"name": "Guard scale head repair",
+		"output": {
+			"type": "item",
+			"code": "favarangian:scalehead-guard-steel"
+		}
+	},
+	{
+		"ingredientPattern": "AL,P_",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "favarangian:scalehead-guardmasked-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"]
+			},
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"]
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-normal-plain"
+			}
+		},
+		"copyAttributesFrom": "A",
+		"averageDurability": false,
+		"width": 2,
+		"height": 2,
+		"shapeless": true,
+		"name": "Guardmasked scale head repair",
+		"output": {
+			"type": "item",
+			"code": "favarangian:scalehead-guardmasked-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "AL,P_",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "favarangian:scalehead-guardmasked-steel"
+			},
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-steel"
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-sturdy-plain"
+			}
+		},
+		"copyAttributesFrom": "A",
+		"averageDurability": false,
+		"width": 2,
+		"height": 2,
+		"shapeless": true,
+		"name": "Guardmasked scale head repair",
+		"output": {
+			"type": "item",
+			"code": "favarangian:scalehead-guardmasked-steel"
+		}
+	},
+	{
+		"ingredientPattern": "AL,P_",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "favarangian:scalebody-guard-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"]
+			},
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"]
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-normal-plain"
+			}
+		},
+		"copyAttributesFrom": "A",
+		"averageDurability": false,
+		"width": 2,
+		"height": 2,
+		"shapeless": true,
+		"name": "Guard scale body repair",
+		"output": {
+			"type": "item",
+			"code": "favarangian:scalebody-guard-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "AL,P_",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "favarangian:scalebody-guard-steel"
+			},
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-steel"
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-sturdy-plain"
+			}
+		},
+		"copyAttributesFrom": "A",
+		"averageDurability": false,
+		"width": 2,
+		"height": 2,
+		"shapeless": true,
+		"name": "Guard scale body repair",
+		"output": {
+			"type": "item",
+			"code": "favarangian:scalebody-guard-steel"
+		}
+	},
+	{
+		"ingredientPattern": "AL,P_",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "favarangian:scalelegs-guard-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"]
+			},
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"]
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-normal-plain"
+			}
+		},
+		"copyAttributesFrom": "A",
+		"averageDurability": false,
+		"width": 2,
+		"height": 2,
+		"shapeless": true,
+		"name": "Guard scale legs repair",
+		"output": {
+			"type": "item",
+			"code": "favarangian:scalelegs-guard-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "AL,P_",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "favarangian:scalelegs-guard-steel"
+			},
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-steel"
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-sturdy-plain"
+			}
+		},
+		"copyAttributesFrom": "A",
+		"averageDurability": false,
+		"width": 2,
+		"height": 2,
+		"shapeless": true,
+		"name": "Guard scale legs repair",
+		"output": {
+			"type": "item",
+			"code": "favarangian:scalelegs-guard-steel"
+		}
+	},
+	{
+		"ingredientPattern": "ALN,C__,P__",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "favarangian:platehead-captain-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"]
+			},
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"]
+			},
+			"C": {
+				"type": "item",
+				"code": "game:metalchain-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"]
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalnailsandstrips-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"],
+				"quantity": 4
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-normal-plain"
+			}
+		},
+		"copyAttributesFrom": "A",
+		"averageDurability": false,
+		"width": 3,
+		"height": 3,
+		"shapeless": true,
+		"name": "Captain plate head repair",
+		"output": {
+			"type": "item",
+			"code": "favarangian:platehead-captain-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "ALN,C__,P__",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "favarangian:platehead-captain-steel"
+			},
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-steel"
+			},
+			"C": {
+				"type": "item",
+				"code": "game:metalchain-steel"
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalnailsandstrips-steel",
+				"quantity": 4
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-sturdy-plain"
+			}
+		},
+		"copyAttributesFrom": "A",
+		"averageDurability": false,
+		"width": 3,
+		"height": 3,
+		"shapeless": true,
+		"name": "Captain plate head repair",
+		"output": {
+			"type": "item",
+			"code": "favarangian:platehead-captain-steel"
+		}
+	},
+	{
+		"ingredientPattern": "ALN,C__,P__",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "favarangian:platehead-captainmasked-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"]
+			},
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"]
+			},
+			"C": {
+				"type": "item",
+				"code": "game:metalchain-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"]
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalnailsandstrips-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"],
+				"quantity": 4
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-normal-plain"
+			}
+		},
+		"copyAttributesFrom": "A",
+		"averageDurability": false,
+		"width": 3,
+		"height": 3,
+		"shapeless": true,
+		"name": "Captainmasked plate head repair",
+		"output": {
+			"type": "item",
+			"code": "favarangian:platehead-captainmasked-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "ALN,C__,P__",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "favarangian:platehead-captainmasked-steel"
+			},
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-steel"
+			},
+			"C": {
+				"type": "item",
+				"code": "game:metalchain-steel"
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalnailsandstrips-steel",
+				"quantity": 4
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-sturdy-plain"
+			}
+		},
+		"copyAttributesFrom": "A",
+		"averageDurability": false,
+		"width": 3,
+		"height": 3,
+		"shapeless": true,
+		"name": "Captainmasked plate head repair",
+		"output": {
+			"type": "item",
+			"code": "favarangian:platehead-captainmasked-steel"
+		}
+	},
+	{
+		"ingredientPattern": "ALN,C__,P__",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "favarangian:platebody-captain-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"]
+			},
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"]
+			},
+			"C": {
+				"type": "item",
+				"code": "game:metalchain-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"]
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalnailsandstrips-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"],
+				"quantity": 4
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-normal-plain"
+			}
+		},
+		"copyAttributesFrom": "A",
+		"averageDurability": false,
+		"width": 3,
+		"height": 3,
+		"shapeless": true,
+		"name": "Captain plate body repair",
+		"output": {
+			"type": "item",
+			"code": "favarangian:platebody-captain-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "ALN,C__,P__",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "favarangian:platebody-captain-steel"
+			},
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-steel"
+			},
+			"C": {
+				"type": "item",
+				"code": "game:metalchain-steel"
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalnailsandstrips-steel",
+				"quantity": 4
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-sturdy-plain"
+			}
+		},
+		"copyAttributesFrom": "A",
+		"averageDurability": false,
+		"width": 3,
+		"height": 3,
+		"shapeless": true,
+		"name": "Captain plate body repair",
+		"output": {
+			"type": "item",
+			"code": "favarangian:platebody-captain-steel"
+		}
+	},
+	{
+		"ingredientPattern": "ALN,C__,P__",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "favarangian:platebody-myrmidon-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"]
+			},
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"]
+			},
+			"C": {
+				"type": "item",
+				"code": "game:metalchain-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"]
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalnailsandstrips-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"],
+				"quantity": 4
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-normal-plain"
+			}
+		},
+		"copyAttributesFrom": "A",
+		"averageDurability": false,
+		"width": 3,
+		"height": 3,
+		"shapeless": true,
+		"name": "Myrmidon plate body repair",
+		"output": {
+			"type": "item",
+			"code": "favarangian:platebody-myrmidon-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "ALN,C__,P__",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "favarangian:platebody-myrmidon-steel"
+			},
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-steel"
+			},
+			"C": {
+				"type": "item",
+				"code": "game:metalchain-steel"
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalnailsandstrips-steel",
+				"quantity": 4
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-sturdy-plain"
+			}
+		},
+		"copyAttributesFrom": "A",
+		"averageDurability": false,
+		"width": 3,
+		"height": 3,
+		"shapeless": true,
+		"name": "Myrmidon plate body repair",
+		"output": {
+			"type": "item",
+			"code": "favarangian:platebody-myrmidon-steel"
+		}
+	},
+	{
+		"ingredientPattern": "ALN,C__,P__",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "favarangian:platebody-veteran-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"]
+			},
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"]
+			},
+			"C": {
+				"type": "item",
+				"code": "game:metalchain-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"]
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalnailsandstrips-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"],
+				"quantity": 4
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-normal-plain"
+			}
+		},
+		"copyAttributesFrom": "A",
+		"averageDurability": false,
+		"width": 3,
+		"height": 3,
+		"shapeless": true,
+		"name": "Veteran plate body repair",
+		"output": {
+			"type": "item",
+			"code": "favarangian:platebody-veteran-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "ALN,C__,P__",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "favarangian:platebody-veteran-steel"
+			},
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-steel"
+			},
+			"C": {
+				"type": "item",
+				"code": "game:metalchain-steel"
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalnailsandstrips-steel",
+				"quantity": 4
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-sturdy-plain"
+			}
+		},
+		"copyAttributesFrom": "A",
+		"averageDurability": false,
+		"width": 3,
+		"height": 3,
+		"shapeless": true,
+		"name": "Veteran plate body repair",
+		"output": {
+			"type": "item",
+			"code": "favarangian:platebody-veteran-steel"
+		}
+	},
+	{
+		"ingredientPattern": "ALN,C__,P__",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "favarangian:platelegs-captain-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"]
+			},
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"]
+			},
+			"C": {
+				"type": "item",
+				"code": "game:metalchain-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"]
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalnailsandstrips-*",
+				"name": "metal",
+				"allowedVariants": ["iron", "meteoriciron"],
+				"quantity": 4
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-normal-plain"
+			}
+		},
+		"copyAttributesFrom": "A",
+		"averageDurability": false,
+		"width": 3,
+		"height": 3,
+		"shapeless": true,
+		"name": "Captain plate legs repair",
+		"output": {
+			"type": "item",
+			"code": "favarangian:platelegs-captain-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "ALN,C__,P__",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "favarangian:platelegs-captain-steel"
+			},
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-steel"
+			},
+			"C": {
+				"type": "item",
+				"code": "game:metalchain-steel"
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalnailsandstrips-steel",
+				"quantity": 4
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-sturdy-plain"
+			}
+		},
+		"copyAttributesFrom": "A",
+		"averageDurability": false,
+		"width": 3,
+		"height": 3,
+		"shapeless": true,
+		"name": "Captain plate legs repair",
+		"output": {
+			"type": "item",
+			"code": "favarangian:platelegs-captain-steel"
+		}
+	}
+]

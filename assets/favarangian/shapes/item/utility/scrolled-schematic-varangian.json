@@ -7,9 +7,9 @@
 	"textureWidth": 16,
 	"textureHeight": 16,
 	"textureSizes": {
-		"scroll": [16,16]
 	},
 	"textures": {
+		"scroll": "favarangian:utility/scrolled-schematic-varangian"
 	},
 	"elements": [
 		{

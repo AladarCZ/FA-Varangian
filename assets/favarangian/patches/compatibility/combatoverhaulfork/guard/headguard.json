@@ -1,0 +1,179 @@
+[
+	{
+		"file": "favarangian:itemtypes/wearable/varangian/scalehead",
+		"op": "addmerge",
+		"path": "/behaviorsByType",
+		"dependsOn": [
+			{ "modId": "combatoverhaulfork" }
+		],
+		"value": {
+			"*guard-iron": [
+				{ "name": "CombatOverhaul:WearableArmor" },
+				{
+					"name": "CombatOverhaul:Armor",
+					"propertiesByType": {
+						"scalehead-guard-iron*": {
+							"Layers": ["Outer","Middle"],
+							"Zones": ["Head","Neck","Face"],
+							"Resists": {
+								"SlashingAttack": 7,
+								"PiercingAttack": 5,
+								"BluntAttack": 7
+							},
+							"FlatReduction": {},
+							"PlayerStats": {
+								"steadyAim": -0.04,
+								"walkspeed": 0,
+								"manipulationSpeed": -0.03,
+								"hungerrate": 0.1,
+								"healingeffectivness": -0.06
+							}
+						}
+					}
+				}
+			],
+			"*guard-meteoriciron": [
+				{ "name": "CombatOverhaul:WearableArmor" },
+				{
+					"name": "CombatOverhaul:Armor",
+					"propertiesByType": {
+						"scalehead-guard-meteoriciron*": {
+							"Layers": ["Outer","Middle"],
+							"Zones": ["Head","Neck","Face"],
+							"Resists": {
+								"SlashingAttack": 7,
+								"PiercingAttack": 5,
+								"BluntAttack": 7
+							},
+							"FlatReduction": {},
+							"PlayerStats": {
+								"steadyAim": -0.04,
+								"walkspeed": 0,
+								"manipulationSpeed": -0.03,
+								"hungerrate": 0.1,
+								"healingeffectivness": -0.06
+							}
+						}
+					}
+				}
+			],
+			"*guard-steel": [
+				{ "name": "CombatOverhaul:WearableArmor" },
+				{
+					"name": "CombatOverhaul:Armor",
+					"propertiesByType": {
+						"scalehead-guard-steel*": {
+							"Layers": ["Outer","Middle"],
+							"Zones": ["Head","Neck","Face"],
+							"Resists": {
+								"SlashingAttack": 8,
+								"PiercingAttack": 6,
+								"BluntAttack": 8
+							},
+							"FlatReduction": {},
+							"PlayerStats": {
+								"steadyAim": -0.04,
+								"walkspeed": 0,
+								"manipulationSpeed": -0.03,
+								"hungerrate": 0.1,
+								"healingeffectivness": -0.06
+							}
+						}
+					}
+				}
+			]
+		}
+	},
+	{
+		"file": "favarangian:itemtypes/wearable/varangian/scalehead",
+		"op": "addmerge",
+		"path": "/durabilityByType",
+		"dependsOn": [
+			{ "modId": "combatoverhaulfork" }
+		],
+		"value": {
+			"scalehead-guard-iron*": 5000,
+			"scalehead-guard-meteoriciron*": 6500,
+			"scalehead-guard-steel*": 8000
+		}
+	},
+	{
+		"file": "favarangian:itemtypes/wearable/varangian/scalehead",
+		"dependsOn": [
+			{ "modId": "combatoverhaulfork" }
+		],
+		"op": "remove",
+		"path": "/behaviorsByType/*guard-iron/2/properties/protectionModifiers"
+	},
+	{
+		"file": "favarangian:itemtypes/wearable/varangian/scalehead",
+		"dependsOn": [
+			{ "modId": "combatoverhaulfork" }
+		],
+		"op": "remove",
+		"path": "/behaviorsByType/*guard-iron/2/properties/statModifiers"
+	},
+	{
+		"file": "favarangian:itemtypes/wearable/varangian/scalehead",
+		"dependsOn": [
+			{ "modId": "combatoverhaulfork" }
+		],
+		"op": "remove",
+		"path": "/behaviorsByType/*guard-meteoriciron/2/properties/protectionModifiers"
+	},
+	{
+		"file": "favarangian:itemtypes/wearable/varangian/scalehead",
+		"dependsOn": [
+			{ "modId": "combatoverhaulfork" }
+		],
+		"op": "remove",
+		"path": "/behaviorsByType/*guard-meteoriciron/2/properties/statModifiers"
+	},
+	{
+		"file": "favarangian:itemtypes/wearable/varangian/scalehead",
+		"dependsOn": [
+			{ "modId": "combatoverhaulfork" }
+		],
+		"op": "remove",
+		"path": "/behaviorsByType/*guard-steel/2/properties/protectionModifiers"
+	},
+	{
+		"file": "favarangian:itemtypes/wearable/varangian/scalehead",
+		"dependsOn": [
+			{ "modId": "combatoverhaulfork" }
+		],
+		"op": "remove",
+		"path": "/behaviorsByType/*guard-steel/2/properties/statModifiers"
+	},
+	{
+		"file": "favarangian:itemtypes/wearable/varangian/scalehead",
+		"dependsOn": [
+			{ "modId": "combatoverhaulfork" }
+		],
+		"op": "addmerge",
+		"path": "/class",
+		"value": "Item"
+	},
+	{
+		"file": "favarangian:itemtypes/wearable/varangian/scalehead",
+		"dependsOn": [
+			{ "modId": "combatoverhaulfork" }
+		],
+		"op": "addmerge",
+		"path": "/attributes",
+		"value": {
+			"clothesCategory": "armorhead"
+		}
+	},
+	{
+		"file": "favarangian:itemtypes/wearable/varangian/scalehead",
+		"dependsOn": [
+			{ "modId": "combatoverhaulfork" }
+		],
+		"op": "add",
+		"path": "/attributes/materialCountByType",
+		"value": {
+			"scalehead-*": 8
+		}
+	}
+]

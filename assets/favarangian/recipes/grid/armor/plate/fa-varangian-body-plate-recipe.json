@@ -1,0 +1,284 @@
+[
+  {
+    "ingredientPattern": "DBD,FEF,IGI",
+    "recipeGroup": 1,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "favarangian:fa-varangian-schematic",
+        "returnedStack": { "type": "item", "code": "favarangian:fa-varangian-schematic" }
+      },
+      "D": {
+        "type": "item",
+        "code": "game:metalplate-*",
+        "name": "metal",
+        "allowedVariants": ["iron", "meteoriciron"],
+        "quantity": 2
+      },
+      "E": {
+        "type": "item",
+        "code": "game:armor-body-plate-*",
+        "name": "metal",
+        "allowedVariants": ["iron", "meteoriciron"]
+      },
+      "F": {
+        "type": "item",
+        "code": "game:metalnailsandstrips-*",
+        "name": "metal",
+        "allowedVariants": ["iron", "meteoriciron"],
+        "quantity": 6
+      },
+      "G": {
+        "type": "item",
+        "code": "game:hammer-*",
+        "isTool": true,
+        "toolDurabilityCost": 100
+      },
+      "I": {
+        "type": "item",
+        "code": "game:leather-normal-plain",
+        "quantity": 6
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "name": "Varangian platebody captain {metal}",
+    "output": {
+      "type": "item",
+      "code": "favarangian:platebody-captain-{metal}",
+      "attributes": { "types": { "coverbody": "none", "stripbody": "none", "decorationbody": "none", "colorbody": "none" } }
+    }
+  },
+  {
+    "ingredientPattern": "DBD,FEF,IGI",
+    "recipeGroup": 1,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "favarangian:fa-varangian-schematic",
+        "returnedStack": { "type": "item", "code": "favarangian:fa-varangian-schematic" }
+      },
+      "D": {
+        "type": "item",
+        "code": "game:metalplate-steel",
+        "quantity": 2
+      },
+      "E": {
+        "type": "item",
+        "code": "game:armor-body-plate-steel"
+      },
+      "F": {
+        "type": "item",
+        "code": "game:metalnailsandstrips-steel",
+        "quantity": 6
+      },
+      "G": {
+        "type": "item",
+        "code": "game:hammer-*",
+        "isTool": true,
+        "toolDurabilityCost": 100
+      },
+      "I": {
+        "type": "item",
+        "code": "game:leather-sturdy-plain",
+        "quantity": 6
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "name": "Varangian platebody captain steel",
+    "output": {
+      "type": "item",
+      "code": "favarangian:platebody-captain-steel",
+      "attributes": { "types": { "coverbody": "none", "stripbody": "none", "decorationbody": "none", "colorbody": "none" } }
+    }
+  },
+  {
+    "ingredientPattern": "FBF,DED,IGI",
+    "recipeGroup": 1,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "favarangian:fa-varangian-schematic",
+        "returnedStack": { "type": "item", "code": "favarangian:fa-varangian-schematic" }
+      },
+      "D": {
+        "type": "item",
+        "code": "game:metalplate-*",
+        "name": "metal",
+        "allowedVariants": ["iron", "meteoriciron"],
+        "quantity": 4
+      },
+      "E": {
+        "type": "item",
+        "code": "game:armor-body-plate-*",
+        "name": "metal",
+        "allowedVariants": ["iron", "meteoriciron"]
+      },
+      "F": {
+        "type": "item",
+        "code": "game:metalnailsandstrips-*",
+        "name": "metal",
+        "allowedVariants": ["iron", "meteoriciron"],
+        "quantity": 8
+      },
+      "G": {
+        "type": "item",
+        "code": "game:hammer-*",
+        "isTool": true,
+        "toolDurabilityCost": 100
+      },
+      "I": {
+        "type": "item",
+        "code": "game:leather-normal-plain",
+        "quantity": 6
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "name": "Varangian platebody myrmidon {metal}",
+    "output": {
+      "type": "item",
+      "code": "favarangian:platebody-myrmidon-{metal}",
+      "attributes": { "types": { "coverbody": "none", "stripbody": "none", "decorationbody": "none", "colorbody": "none" } }
+    }
+  },
+  {
+    "ingredientPattern": "FBF,DED,IGI",
+    "recipeGroup": 1,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "favarangian:fa-varangian-schematic",
+        "returnedStack": { "type": "item", "code": "favarangian:fa-varangian-schematic" }
+      },
+      "D": {
+        "type": "item",
+        "code": "game:metalplate-steel",
+        "quantity": 4
+      },
+      "E": {
+        "type": "item",
+        "code": "game:armor-body-plate-steel"
+      },
+      "F": {
+        "type": "item",
+        "code": "game:metalnailsandstrips-steel",
+        "quantity": 8
+      },
+      "G": {
+        "type": "item",
+        "code": "game:hammer-*",
+        "isTool": true,
+        "toolDurabilityCost": 100
+      },
+      "I": {
+        "type": "item",
+        "code": "game:leather-sturdy-plain",
+        "quantity": 6
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "name": "Varangian platebody myrmidon steel",
+    "output": {
+      "type": "item",
+      "code": "favarangian:platebody-myrmidon-steel",
+      "attributes": { "types": { "coverbody": "none", "stripbody": "none", "decorationbody": "none", "colorbody": "none" } }
+    }
+  },
+  {
+    "ingredientPattern": "_BD,FEF,IGI",
+    "recipeGroup": 1,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "favarangian:fa-varangian-schematic",
+        "returnedStack": { "type": "item", "code": "favarangian:fa-varangian-schematic" }
+      },
+      "D": {
+        "type": "item",
+        "code": "game:metalplate-*",
+        "name": "metal",
+        "allowedVariants": ["iron", "meteoriciron"],
+        "quantity": 4
+      },
+      "E": {
+        "type": "item",
+        "code": "game:armor-body-plate-*",
+        "name": "metal",
+        "allowedVariants": ["iron", "meteoriciron"]
+      },
+      "F": {
+        "type": "item",
+        "code": "game:metalnailsandstrips-*",
+        "name": "metal",
+        "allowedVariants": ["iron", "meteoriciron"],
+        "quantity": 4
+      },
+      "G": {
+        "type": "item",
+        "code": "game:hammer-*",
+        "isTool": true,
+        "toolDurabilityCost": 100
+      },
+      "I": {
+        "type": "item",
+        "code": "game:leather-normal-plain",
+        "quantity": 6
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "name": "Varangian platebody veteran {metal}",
+    "output": {
+      "type": "item",
+      "code": "favarangian:platebody-veteran-{metal}",
+      "attributes": { "types": { "coverbody": "none", "stripbody": "none", "decorationbody": "none", "colorbody": "none" } }
+    }
+  },
+  {
+    "ingredientPattern": "_BD,FEF,IGI",
+    "recipeGroup": 1,
+    "ingredients": {
+      "B": {
+        "type": "item",
+        "code": "favarangian:fa-varangian-schematic",
+        "returnedStack": { "type": "item", "code": "favarangian:fa-varangian-schematic" }
+      },
+      "D": {
+        "type": "item",
+        "code": "game:metalplate-steel",
+        "quantity": 4
+      },
+      "E": {
+        "type": "item",
+        "code": "game:armor-body-plate-steel"
+      },
+      "F": {
+        "type": "item",
+        "code": "game:metalnailsandstrips-steel",
+        "quantity": 4
+      },
+      "G": {
+        "type": "item",
+        "code": "game:hammer-*",
+        "isTool": true,
+        "toolDurabilityCost": 100
+      },
+      "I": {
+        "type": "item",
+        "code": "game:leather-sturdy-plain",
+        "quantity": 6
+      }
+    },
+    "width": 3,
+    "height": 3,
+    "name": "Varangian platebody veteran steel",
+    "output": {
+      "type": "item",
+      "code": "favarangian:platebody-veteran-steel",
+      "attributes": { "types": { "coverbody": "none", "stripbody": "none", "decorationbody": "none", "colorbody": "none" } }
+    }
+  }
+]

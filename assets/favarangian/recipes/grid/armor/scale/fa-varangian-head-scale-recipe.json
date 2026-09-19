@@ -1,0 +1,186 @@
+[
+  {
+  "ingredientPattern": "IDI,FEF,_GB",
+  "recipeGroup": 1,
+  "ingredients": {
+    "B": {
+      "type": "item",
+      "code": "favarangian:fa-varangian-schematic",
+      "returnedStack": { "type": "item", "code": "favarangian:fa-varangian-schematic" }
+    },
+    "D": {
+      "type": "item",
+      "code": "game:metalplate-*",
+      "name": "metal",
+      "allowedVariants": ["iron", "meteoriciron"]
+    },
+    "E": {
+      "type": "item",
+      "code": "game:armor-head-scale-*",
+      "name": "metal",
+      "allowedVariants": ["iron", "meteoriciron"]
+    },
+    "F": {
+      "type": "item",
+      "code": "game:metalnailsandstrips-*",
+      "name": "metal",
+      "allowedVariants": ["iron", "meteoriciron"],
+      "quantity": 2
+    },
+    "G": {
+      "type": "item",
+      "code": "game:hammer-*",
+      "isTool": true,
+      "toolDurabilityCost": 100
+    },
+    "I": {
+      "type": "item",
+      "code": "game:leather-normal-plain",
+      "quantity": 2
+    }
+  },
+  "width": 3,
+  "height": 3,
+  "name": "Varangian scalehead guard {metal}",
+  "output": {
+    "type": "item",
+    "code": "favarangian:scalehead-guard-{metal}",
+    "attributes": { "types": { "coverhead": "none", "striphead": "none", "decorationhead": "none", "colorhead": "none" } }
+  }
+},
+  {
+  "ingredientPattern": "IDI,FEF,_GB",
+  "recipeGroup": 1,
+  "ingredients": {
+    "B": {
+      "type": "item",
+      "code": "favarangian:fa-varangian-schematic",
+      "returnedStack": { "type": "item", "code": "favarangian:fa-varangian-schematic" }
+    },
+    "D": {
+      "type": "item",
+      "code": "game:metalplate-steel"
+    },
+    "E": {
+      "type": "item",
+      "code": "game:armor-head-scale-steel"
+    },
+    "F": {
+      "type": "item",
+      "code": "game:metalnailsandstrips-steel",
+      "quantity": 2
+    },
+    "G": {
+      "type": "item",
+      "code": "game:hammer-*",
+      "isTool": true,
+      "toolDurabilityCost": 100
+    },
+    "I": {
+      "type": "item",
+      "code": "game:leather-sturdy-plain",
+      "quantity": 2
+    }
+  },
+  "width": 3,
+  "height": 3,
+  "name": "Varangian scalehead guard steel",
+  "output": {
+    "type": "item",
+    "code": "favarangian:scalehead-guard-steel",
+    "attributes": { "types": { "coverhead": "none", "striphead": "none", "decorationhead": "none", "colorhead": "none" } }
+  }
+},
+  {
+  "ingredientPattern": "IDI,FEF,DGB",
+  "recipeGroup": 1,
+  "ingredients": {
+    "B": {
+      "type": "item",
+      "code": "favarangian:fa-varangian-schematic",
+      "returnedStack": { "type": "item", "code": "favarangian:fa-varangian-schematic" }
+    },
+    "D": {
+      "type": "item",
+      "code": "game:metalplate-*",
+      "name": "metal",
+      "allowedVariants": ["iron", "meteoriciron"]
+    },
+    "E": {
+      "type": "item",
+      "code": "game:armor-head-scale-*",
+      "name": "metal",
+      "allowedVariants": ["iron", "meteoriciron"]
+    },
+    "F": {
+      "type": "item",
+      "code": "game:metalnailsandstrips-*",
+      "name": "metal",
+      "allowedVariants": ["iron", "meteoriciron"],
+      "quantity": 2
+    },
+    "G": {
+      "type": "item",
+      "code": "game:hammer-*",
+      "isTool": true,
+      "toolDurabilityCost": 100
+    },
+    "I": {
+      "type": "item",
+      "code": "game:leather-normal-plain",
+      "quantity": 2
+    }
+  },
+  "width": 3,
+  "height": 3,
+  "name": "Varangian scalehead guardmasked {metal}",
+  "output": {
+    "type": "item",
+    "code": "favarangian:scalehead-guardmasked-{metal}",
+    "attributes": { "types": { "coverhead": "none", "striphead": "none", "decorationhead": "none", "colorhead": "none" } }
+  }
+},
+  {
+  "ingredientPattern": "IDI,FEF,DGB",
+  "recipeGroup": 1,
+  "ingredients": {
+    "B": {
+      "type": "item",
+      "code": "favarangian:fa-varangian-schematic",
+      "returnedStack": { "type": "item", "code": "favarangian:fa-varangian-schematic" }
+    },
+    "D": {
+      "type": "item",
+      "code": "game:metalplate-steel"
+    },
+    "E": {
+      "type": "item",
+      "code": "game:armor-head-scale-steel"
+    },
+    "F": {
+      "type": "item",
+      "code": "game:metalnailsandstrips-steel",
+      "quantity": 2
+    },
+    "G": {
+      "type": "item",
+      "code": "game:hammer-*",
+      "isTool": true,
+      "toolDurabilityCost": 100
+    },
+    "I": {
+      "type": "item",
+      "code": "game:leather-sturdy-plain",
+      "quantity": 2
+    }
+  },
+  "width": 3,
+  "height": 3,
+  "name": "Varangian scalehead guardmasked steel",
+  "output": {
+    "type": "item",
+    "code": "favarangian:scalehead-guardmasked-steel",
+    "attributes": { "types": { "coverhead": "none", "striphead": "none", "decorationhead": "none", "colorhead": "none" } }
+  }
+}
+]
